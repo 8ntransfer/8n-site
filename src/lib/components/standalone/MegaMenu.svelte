@@ -50,13 +50,13 @@
 		{
 			id: 1,
 			title: 'Expertise malfaçon, désordre, litige...',
-			href: '/prestations/expertises',
+			href: '/prestations/expertises/completes',
 			text: "L'équipe propose des prestations en tous genres"
 		},
 		{
 			id: 2,
 			title: 'Assistance Sinistres',
-			href: '/prestations/assistance',
+			href: '/prestations/assistance/expertise-apres-sinistre',
 			text: 'Assistance Sinistres assurances, catastrophe naturelle, contre expertise'
 		},
 		{
@@ -131,7 +131,7 @@
 	<div
 		class="absolute mt-2 top-[100%] left-[50%] translate-x-[-50%] shadow-md rounded-md p-2 bg-white text-left flex gap-2 invisible group-hover:visible w-[clamp(650px, 100%, 80vw)]"
 	>
-		<div class="relative w-[650px]">
+		<div class="relative min-w-[300px] w-[300px] max-w-[300px]">
 			{#each links as link}
 				<a
 					href={link.href}
@@ -149,7 +149,7 @@
 				</a>
 			{/each}
 		</div>
-		<div>
+		<div class="relative min-w-[400px] w-[400px] max-w-[400px]">
 			{#each childLinks as link}
 				{#if link.parent === currentLinkId}
 					<a href={link.href} class="block px-4 py-2 rounded-md text-left hover:bg-gray-100">

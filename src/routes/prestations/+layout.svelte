@@ -7,7 +7,7 @@
 	$: currentLink = $page.url.pathname;
 
 	let activeClass =
-		'block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500';
+		'block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-blue-600 before:bg-blue-600';
 	let nonActiveClass =
 		'block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300';
 
@@ -61,7 +61,7 @@
 <div class="mt-28" />
 <div class="relative flex">
 	<div
-		class="sticky top-[4.75rem] ml-10 h-[calc(100vh-4.75rem)] w-72 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16"
+		class="sticky top-[4.75rem] ml-10 h-[calc(100vh-4.75rem)] w-96 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16"
 	>
 		<nav class="text-base lg:text-sm">
 			<ul role="list" class="space-y-9">
