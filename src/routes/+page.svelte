@@ -233,7 +233,10 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 </script>
 
 <svelte:head>
-	<Head title="Page d'accueil" description="Bienvenue sur mon site web" />
+	<Head
+		title="8N - Expertise du bâtiment"
+		description="Solutions complètes pour vos problèmes de construction."
+	/>
 </svelte:head>
 
 <!-- <VideoSection /> -->

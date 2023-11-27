@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import Head from '$lib/components/sections/Head.svelte';
 	import Footer from '$lib/components/standalone/Footer.svelte';
 
 	let currentLink = '';
@@ -57,6 +58,13 @@
 		}
 	];
 </script>
+
+<svelte:head>
+	<Head
+		title="8N - Prestations"
+		description="Solutions complètes pour vos problèmes de construction."
+	/>
+</svelte:head>
 
 <div class="mt-28" />
 <div class="relative flex">
