@@ -2,8 +2,8 @@
 	const currentYear = new Date().getFullYear();
 </script>
 
-<footer class=" bg-blue-600 pt-4 pb-8 xl:pt-8">
-	<div class="max-w-screen-lg px-4 mx-auto xl:max-w-screen-xl sm:px-6 md:px-8 text-gray-300">
+<footer class=" bg-gray-100 pt-4 pb-8 xl:pt-8">
+	<div class="max-w-screen-lg px-4 mx-auto xl:max-w-screen-xl sm:px-6 md:px-8 text-gray-400">
 		<ul class="flex flex-wrap justify-center pb-8 text-lg font-light">
 			<li class="w-1/2 md:w-1/4 lg:w-1/4">
 				<div class="text-center">
@@ -12,7 +12,7 @@
 			</li>
 			<li class="w-1/2 md:w-1/4 lg:w-1/4">
 				<div class="pr-10">
-					<h2 class=" text-gray-200 text-md uppercase mb-4">A propos</h2>
+					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">A propos</h2>
 					<p>
 						Notre entreprise dédiée à l'expertise du bâtiment allie savoir-faire technique et
 						engagement à résoudre vos problèmes, assurant ainsi la tranquillité d'esprit pour nos
@@ -22,32 +22,46 @@
 			</li>
 			<li class="w-1/2 md:w-1/4 lg:w-1/4">
 				<div class="">
-					<h2 class=" text-gray-200 text-md uppercase mb-4">Navigation rapide</h2>
+					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">Navigation rapide</h2>
 					<ul>
-						<li class="mb-4 transition-colors duration-200 hover:text-white">
-							<a href="/"> Accueil </a>
+						<li class="mb-4 transition-colors duration-200">
+							<a href="/" class="py-2 px-4 rounded-md hover:bg-gray-200"> Accueil </a>
 						</li>
-						<li class="mb-4 transition-colors duration-200 hover:text-white">
-							<a href="/prestations/expertises/completes"> Prestations </a>
+						<li class="mb-4 transition-colors duration-200">
+							<a
+								href="/prestations/expertises/completes"
+								class="py-2 px-4 rounded-md hover:bg-gray-200"
+							>
+								Prestations
+							</a>
 						</li>
-						<li class="mb-4 transition-colors duration-200 hover:text-white">
-							<a href="/contact"> Contact </a>
+						<li class="mb-4 transition-colors duration-200">
+							<a href="/contact" class="py-2 px-4 rounded-md hover:bg-gray-200"> Contact </a>
 						</li>
 					</ul>
 				</div>
 			</li>
 			<li class="w-1/2 md:w-1/4 lg:w-1/4">
 				<div class="">
-					<h2 class=" text-gray-200 text-md uppercase mb-4">Contact info</h2>
+					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">Contact info</h2>
 					<ul>
-						<li class="mb-4 transition-colors duration-200 hover:text-white">
-							<a href="/"> 14 Rue de l'Église, 31250 Revel </a>
+						<li class="mb-4 transition-colors duration-200">
+							<a href="/" class="py-2 px-4 rounded-md hover:bg-gray-200">
+								14 Rue de l'Église, 31250 Revel
+							</a>
 						</li>
-						<li class="mb-4 transition-colors duration-200 hover:text-white">
-							<a href="/prestations/expertises/completes"> +33 7 81 39 96 49 </a>
+						<li class="mb-4 transition-colors duration-200">
+							<a
+								href="/prestations/expertises/completes"
+								class="py-2 px-4 rounded-md hover:bg-gray-200"
+							>
+								+33 7 81 39 96 49
+							</a>
 						</li>
-						<li class="mb-4 transition-colors duration-200 hover:text-white">
-							<a href="/contact"> monadress@gmail.com </a>
+						<li class="mb-4 transition-colors duration-200">
+							<a href="/contact" class="py-2 px-4 rounded-md hover:bg-gray-200">
+								monadress@gmail.com
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -59,7 +73,7 @@
 					width="20"
 					height="20"
 					fill="currentColor"
-					class="text-xl transition-colors duration-200 hover:text-white"
+					class="text-xl transition-colors duration-200"
 					viewBox="0 0 1792 1792"
 					xmlns="http://www.w3.org/2000/svg"
 				>
@@ -73,7 +87,7 @@
 					width="20"
 					height="20"
 					fill="currentColor"
-					class="text-xl transition-colors duration-200 hover:text-white"
+					class="text-xl transition-colors duration-200"
 					viewBox="0 0 1792 1792"
 					xmlns="http://www.w3.org/2000/svg"
 				>
@@ -88,7 +102,7 @@
 					width="20"
 					height="20"
 					fill="currentColor"
-					class="text-xl transition-colors duration-200 hover:text-white"
+					class="text-xl transition-colors duration-200"
 					viewBox="0 0 1792 1792"
 				>
 					<path
@@ -101,7 +115,7 @@
 					width="20"
 					height="20"
 					fill="currentColor"
-					class="text-xl transition-colors duration-200 hover:text-white"
+					class="text-xl transition-colors duration-200"
 					viewBox="0 0 1792 1792"
 					xmlns="http://www.w3.org/2000/svg"
 				>
@@ -115,7 +129,7 @@
 					width="20"
 					height="20"
 					fill="currentColor"
-					class="text-xl transition-colors duration-200 hover:text-white"
+					class="text-xl transition-colors duration-200"
 					viewBox="0 0 1792 1792"
 					xmlns="http://www.w3.org/2000/svg"
 				>
