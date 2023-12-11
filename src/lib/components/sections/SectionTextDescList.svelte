@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { twMerge } from 'tailwind-merge';
 	import type { ListItem } from '$lib/types/ListItem';
 	import Button from './Button.svelte';
-	import IntersectionObserver from './IntersectionObserver.svelte';
 
 	export let title = 'Title';
 	export let subTitle = 'Sub title';
@@ -10,24 +8,12 @@
 	export let btnLink = '';
 	export let btnText = 'See more';
 	export let listItems: ListItem[] = [];
-
-	let hasIntersected = false;
-
-	const isIntersecting = () => {
-		hasIntersected = true;
-	};
 </script>
 
 <section>
-	<IntersectionObserver on:intersecting={isIntersecting} top={-200} />
-	<div class={twMerge('container p-4 mx-auto bg-white max-w-7xl sm:p-6 lg:p-8 dark:bg-gray-800 ')}>
+	<div class="container p-4 mx-auto bg-white max-w-7xl sm:p-6 lg:p-8 dark:bg-gray-800">
 		<div class="flex flex-wrap -mx-8">
-			<div
-				class={twMerge(
-					'w-full px-8 lg:w-1/2 transition-all ease-in duration-300 opacity-0 ',
-					hasIntersected && 'opacity-100 '
-				)}
-			>
+			<div class="w-full px-8 lg:w-1/2">
 				<div class="pb-12 mb-12 border-b lg:mb-0 lg:pb-0 lg:border-b-0">
 					<p class="text-base font-semibold leading-6 text-blue-500 uppercase">{subTitle}</p>
 
@@ -45,16 +31,7 @@
 			<div class="w-full px-8 lg:w-1/2">
 				<ul class="space-y-12">
 					{#each listItems as listItem, i}
-						<li
-							class={twMerge(
-								`flex -mx-4 transition-all duration-300  translate-x-[-2%] opacity-0`,
-								hasIntersected && 'opacity-100 translate-x-0 '
-							)}
-							style=" transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1); transition-delay: {(i +
-								1) *
-								100 +
-								100}ms;"
-						>
+						<li class="flex -mx-4">
 							<div class="px-4">
 								<span
 									class="flex items-center justify-center w-16 h-16 mx-auto text-2xl font-bold text-blue-600 rounded-full font-heading bg-blue-50"

@@ -20,6 +20,7 @@
 	import Section from '$lib/components/standalone/Section.svelte';
 	import type { Category, ListItem } from '$lib/types/ListItem';
 	import PrestationsBloc from '$lib/components/sections/PrestationsBloc.svelte';
+	import SpaceInvader from '$lib/components/sections/SpaceInvader.svelte';
 
 	const currentYear = new Date().getFullYear();
 
@@ -251,6 +252,8 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 		btnLink="/qui-sommes-nous"
 	/>
 </section>
+
+<!-- <SpaceInvader /> -->
 
 <section class="pb-40">
 	<BlocImagesTextList

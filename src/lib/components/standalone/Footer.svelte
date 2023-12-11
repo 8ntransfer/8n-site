@@ -43,25 +43,10 @@
 			</li>
 			<li class="w-1/2 md:w-1/4 lg:w-1/4">
 				<div class="">
-					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">Contact info</h2>
+					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">Zone d'intervention</h2>
 					<ul>
-						<li class="mb-4 transition-colors duration-200">
-							<a href="/" class="py-2 px-4 rounded-md hover:bg-gray-200">
-								14 Rue de l'Église, 31250 Revel
-							</a>
-						</li>
-						<li class="mb-4 transition-colors duration-200">
-							<a
-								href="/prestations/expertises/completes"
-								class="py-2 px-4 rounded-md hover:bg-gray-200"
-							>
-								+33 7 81 39 96 49
-							</a>
-						</li>
-						<li class="mb-4 transition-colors duration-200">
-							<a href="/contact" class="py-2 px-4 rounded-md hover:bg-gray-200">
-								monadress@gmail.com
-							</a>
+						<li class="mb-4 transition-colors duration-200 py-2 px-4 rounded-md hover:bg-gray-200">
+							Toulouse, Lauragais-Montagne Noire ,Tarn, Aude
 						</li>
 					</ul>
 				</div>

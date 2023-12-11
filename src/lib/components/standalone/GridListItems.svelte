@@ -10,6 +10,10 @@
 
 	$: filteredListItems = listItems.filter((item) => item.category === selectedCategory);
 
+	const handleCategorySelect = (e) => {
+		console.log(e);
+	};
+
 	const handleCategoryClick = (categoryId: number) => {
 		selectedCategory = categoryId;
 	};
@@ -25,7 +29,18 @@
 		</p>
 	</div>
 	<div>
-		<ul class="flex flex-wrap justify-center">
+		<select
+			class="w-full px-3 py-2 mb-4 sm:hidden leading-loose border text-gray-400 rounded-md bg-gray-50 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 {!!selectedCategory
+				? 'text-gray-700'
+				: ''}"
+			on:change={(e) => handleCategoryClick(Number(e.target.value))}
+		>
+			{#each categories as category}
+				<option value={category.id}>{category.label}</option>
+			{/each}
+		</select>
+
+		<ul class=" flex-wrap justify-center hidden sm:flex">
 			{#each categories as category}
 				<li class="mr-2">
 					<button

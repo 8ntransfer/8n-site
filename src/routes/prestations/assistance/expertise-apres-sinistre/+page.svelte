@@ -1,4 +1,4 @@
-<h1 class="mb-4 text-5xl font-bold lg:text-4xl font-heading dark:text-white">
+<h1 class="mb-4 text-3xl font-bold lg:text-4xl font-heading dark:text-white">
 	<span class="text-blue-600">Mission d'Expertise après Sinistre</span> Votre Expert en Réparation
 </h1>
 <p class="leading-loose text-gray-500 dark:text-gray-300">

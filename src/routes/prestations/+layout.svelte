@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import Head from '$lib/components/sections/Head.svelte';
 	import Footer from '$lib/components/standalone/Footer.svelte';
+	import { goto } from '$app/navigation';
 
 	let currentLink = '';
 
@@ -57,6 +58,10 @@
 			]
 		}
 	];
+
+	const handleSelectClick = (href: string) => {
+		goto(href, { replaceState: true });
+	};
 </script>
 
 <svelte:head>
@@ -67,9 +72,20 @@
 </svelte:head>
 
 <div class="mt-28" />
-<div class="relative flex">
+<div class="relative flex flex-col md:flex-row">
+	<select
+		class="md:hidden mx-4 px-3 py-2 mb-4 leading-loose border rounded-md bg-gray-50 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 text-gray-700"
+		on:change={(e) => handleSelectClick(e.target?.value)}
+	>
+		{#each menu as menuItem}
+			<optgroup label={menuItem.title}>
+				{#each menuItem.links as link}
+					<option value={link.href}>{link.title}</option>
+				{/each}
+			</optgroup>{/each}
+	</select>
 	<div
-		class="sticky top-[4.75rem] ml-10 h-[calc(100vh-4.75rem)] w-96 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16"
+		class="hidden md:flex sticky top-[4.75rem] ml-10 h-[calc(100vh-4.75rem)] w-96 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16"
 	>
 		<nav class="text-base lg:text-sm">
 			<ul role="list" class="space-y-9">
@@ -96,8 +112,8 @@
 			</ul>
 		</nav>
 	</div>
-	<div class="w-full flex justify-center items-center pt-12 pr-10 pb-20">
-		<div class="max-w-2xl"><slot /></div>
+	<div class="mx-4 flex justify-center items-center pt-12 pr-10 pb-20">
+		<div class="md:max-w-2xl"><slot /></div>
 	</div>
 </div>
 <Footer />

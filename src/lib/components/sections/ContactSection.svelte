@@ -1,4 +1,10 @@
 <script lang="ts">
+	import Map from '~icons/mdi/map';
+
+	let isOptionSelected = false;
+	let buttonDisabled = true;
+	const REGEX_EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 	async function handleSubmit(form) {
 		const data = new URLSearchParams(new FormData(form.srcElement));
 
@@ -16,6 +22,25 @@
 
 		console.log(res);
 	}
+
+	function handleSelect(e) {
+		isOptionSelected = e.target.value !== '';
+	}
+
+	function handleFormInput(e) {
+		const form = e.target.form;
+
+		const data = new URLSearchParams(new FormData(form));
+
+		console.log(data, Object.fromEntries(data));
+		const formData = Object.fromEntries(data);
+
+		const isFormValid =
+			Object.keys(formData).every((key) => formData[key] !== '') &&
+			REGEX_EMAIL.test(formData.email);
+
+		buttonDisabled = !isFormValid;
+	}
 </script>
 
 <section class="py-16 dark:bg-gray-900">
@@ -32,7 +57,7 @@
 			</div>
 		</div>
 		<div class="pt-8 flex flex-wrap mb-8 -mx-4">
-			<div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
+			<!-- <div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
 				<a
 					href="mailto:s.cavailles81@gmail.com"
 					class="h-full block py-12 text-center transition-all rounded-xl dark:bg-gray-800 hover:bg-gray-100"
@@ -89,36 +114,24 @@
 						>+33 6 20 69 72</span
 					>
 				</a>
-			</div>
-			<div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
-				<a
-					href="https://maps.app.goo.gl/hYM3s8VpujVuogpK7"
+			</div> -->
+			<div class="w-full px-4 mb-4">
+				<div
 					target="_blank"
-					class="h-full block py-12 text-center transition-all rounded-xl dark:bg-gray-800 hover:bg-gray-100"
+					class="h-full block py-12 text-center transition-all rounded-lg shadow-md hover:shadow-xl dark:bg-gray-800"
 				>
 					<div
 						class="inline-flex items-center justify-center w-12 h-12 mb-6 text-gray-100 bg-blue-500 rounded-full dark:bg-blue-500"
 					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							fill="currentColor"
-							class="bi bi-telephone"
-							viewBox="0 0 16 16"
-						>
-							<path
-								d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-							/>
-						</svg>
+						<Map />
 					</div>
 					<h2 class="mb-4 text-xl font-bold leading-9 text-gray-700 md:text-2xl dark:text-gray-400">
-						Localisation
+						Zone de couverture
 					</h2>
 					<span class="text-base font-medium text-gray-500 md:text-lg dark:text-gray-400"
-						>14 Rue de l'Église, 31540 Revel</span
+						>Toulouse, Lauragais-Montagne Noire ,Tarn, Aude</span
 					>
-				</a>
+				</div>
 			</div>
 			<!-- <div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
 				<div
@@ -200,7 +213,7 @@
 		<div
 			class="px-8 py-8 bg-white border rounded-md shadow-sm dark:border-gray-800 dark:bg-gray-800"
 		>
-			<form on:submit|preventDefault={handleSubmit}>
+			<form on:input={handleFormInput} on:submit|preventDefault={handleSubmit}>
 				<div class="mb-6">
 					<h2 class="text-xl font-bold text-gray-00 dark:text-gray-400">
 						Envoyez-nous un message !
@@ -234,20 +247,23 @@
 					required
 				/>
 				<select
-					class="w-full px-3 py-2 mb-4 leading-loose border text-gray-400 rounded-md bg-gray-50 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700"
+					class="w-full px-3 py-2 mb-4 leading-loose border text-gray-400 rounded-md bg-gray-50 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 {isOptionSelected
+						? 'text-gray-700'
+						: ''}"
 					name="messageType"
 					placeholder="Sélectionnez une option"
+					on:input={handleSelect}
 					required
 				>
-					<option value="" disabled selected> Sélectionnez une option </option>
-					<option value="dog"> Problème de chantiers </option>
-					<option value="cat"> Sécurisation de transaction Immobilières </option>
-					<option value="hamster"> Expertise d'assuré lors de sinistre </option>
-					<option value="parrot"> Assistance à réception de travaux </option>
-					<option value="spider"> Assistance et conseils techniques </option>
-					<option value="goldfish"> Assistance d'expertise judiciaire </option>
-					<option value="goldfish"> Constat d'habitabilité </option>
-					<option value="goldfish"> Trouble anormal de voisinage </option>
+					<option value="" selected> Sélectionnez une option </option>
+					<option value="probleme-chantier"> Problème de chantiers </option>
+					<option value="secu-immo"> Sécurisation de transaction Immobilières </option>
+					<option value="sinistre"> Expertise d'assuré lors de sinistre </option>
+					<option value="reception-travaux"> Assistance à réception de travaux </option>
+					<option value="conseils-techniques"> Assistance et conseils techniques </option>
+					<option value="judiciaire"> Assistance d'expertise judiciaire </option>
+					<option value="constat-habitabilité"> Constat d'habitabilité </option>
+					<option value="trouble-voisinage"> Trouble anormal de voisinage </option>
 				</select>
 				<textarea
 					rows="4"
@@ -258,7 +274,8 @@
 				/>
 
 				<button
-					class="w-full py-4 text-sm font-bold leading-normal text-white transition-all duration-300 bg-blue-600 rounded-md dark:bg-blue-500 dark:hover:bg-blue-600 hover:bg-blue-700"
+					disabled={buttonDisabled}
+					class="w-full py-4 text-sm font-bold leading-normal text-white transition-all duration-300 bg-blue-600 rounded-md dark:bg-blue-500 dark:hover:bg-blue-600 hover:bg-blue-700 disabled:opacity-50"
 				>
 					Envoyer
 				</button>
