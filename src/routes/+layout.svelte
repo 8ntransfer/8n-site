@@ -6,9 +6,12 @@
 
 	// get current url path
 	import { page } from '$app/stores';
+	import { SvelteToast } from '@zerodevx/svelte-toast';
 </script>
 
 <div class="app">
+	<SvelteToast />
+
 	<Navbar />
 	{#if $page.url.pathname === '/'}
 		<Header />

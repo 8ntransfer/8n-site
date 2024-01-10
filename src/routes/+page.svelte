@@ -26,20 +26,20 @@
 
 	const imagesForBlocImagesTextList: [Image, Image, Image, Image] = [
 		{
-			src: '/images/photos/plans.avif',
-			alt: 'Image de plans'
+			src: '/images/photos/couverture_degrade.jpg',
+			alt: 'Toiture abimée'
 		},
 		{
-			src: '/images/photos/house.avif',
-			alt: 'Image de maison'
+			src: '/images/photos/fissure_liee_au_mouvement_du_sol.jpg',
+			alt: 'Fissure liée au mouvement du sol'
 		},
 		{
-			src: '/images/photos/construction.avif',
-			alt: 'Image de construction'
+			src: '/images/photos/infiltration_eau_bois.jpg',
+			alt: 'Infiltration eau, pourrissement du bois'
 		},
 		{
-			src: '/images/photos/plans.avif',
-			alt: 'Image de plans'
+			src: '/images/photos/non_respect_normes.jpg',
+			alt: 'Non respect des normes'
 		}
 	];
 
@@ -47,7 +47,7 @@
 		{
 			title: 'Expertise et Expérience',
 			description:
-				"29 ans d'expérience : Notre expert principal, formé et certifié par l'OFIB, met à profit une expérience solide dans le domaine."
+				"Après 29 ans d'expérience dans le bâtiment, notre expert à été formé et certifié par l'OFIB en expertise bâtiment amiable et juridique."
 		},
 		{
 			title: 'Engagements',
@@ -61,7 +61,7 @@
 		{
 			title: 'Intégrité et Transparence',
 			description:
-				'Nous croyons en des valeurs solides, assurant une approche honnête et transparente.'
+				'Nous croyons en des valeurs solides, assurant une approche honnête, rigoureuse et claire.'
 		}
 	];
 
@@ -74,12 +74,7 @@
 		{
 			title: "Qu'est-ce qu'une expertise en bâtiment apporte de plus qu'une simple inspection ?",
 			description:
-				"Une expertise en bâtiment va au-delà d'une simple inspection en fournissant une analyse approfondie des problèmes, des recommandations de réparation, et un rapport juridiquement opposable si nécessaire."
-		},
-		{
-			title: 'Comment choisir un bon expert en bâtiment ?',
-			description:
-				"Choisissez un expert certifié, ayant une expérience significative dans le domaine, de bonnes références et des certifications reconnues. Consultez les avis clients et assurez-vous que l'expert est spécialisé dans les domaines qui vous préoccupent."
+				"Une expertise en bâtiment va au-delà d'une simple inspection en fournissant une analyse approfondie des problèmes, des recommandations de réparation, neutre et désintéressées et un rapport d'expertise juridiquement opposable si nécessaire."
 		},
 		{
 			title: "Quels sont les services proposés pour l'achat d'une propriété ?",
@@ -94,7 +89,7 @@
 		{
 			title: 'Quelle est la différence entre une expertise amiable et une expertise judiciaire ?',
 			description:
-				"Une expertise amiable est réalisée à la demande des parties pour résoudre un litige, tandis qu'une expertise judiciaire est ordonnée par un tribunal dans le cadre d'une procédure judiciaire. Les deux visent à apporter un éclairage technique sur les titles en litige."
+				"Une expertise amiable résout des litiges à la demande d'une partie, recherchant une solution amiable. L'expertise judiciaire intervient après épuisement des recours amiables, ordonnée par le juge, pour éclairer sa décision. Une expertise amiable peut dans certains cas permettre d'aller directement au fond, sans le recourt à une expertise judiciaire."
 		},
 		{
 			title: "Comment puis-je bénéficier de vos services d'assistance à la réception de travaux ?",
@@ -112,29 +107,28 @@
 				'Oui, nous pouvons intervenir en urgence pour évaluer les dégâts des eaux, fournir des recommandations immédiates, et vous aider dans les démarches avec votre assurance.'
 		},
 		{
-			title: "Quels sont les avantages d'un rapport d'expertise juridiquement opposable ?",
+			title: "Quels sont les avantages d'un rapport d'expertise ?",
 			description:
-				"Un rapport d'expertise juridiquement opposable peut être utilisé comme preuve irréfutable dans des litiges. Il renforce votre position lors de négociations ou de procédures judiciaires, si nécessaire."
+				"Un rapport d'expertise amiable est juridiquement opposable. Il décrit un dommage, établit causes et responsabilité. Il renforce votre position pour défendre vos droits à la réparation ou l'indemnisation, lors de négociations ou de procédures judiciaires si nécessaire. "
 		}
 	];
 
 	const aboutUsDescription = `
-L'expertise est un outil essentiel pour éclairer les décisions dans des situations complexes. Fort d'une expérience de plus de 29 ans et certifié par l'OFIB, notre expert principal chez 8N Expertise Bâtiment offre un regard objectif à chaque étape de votre projet, que ce soit pour un achat, une location, la construction d'une maison ou des travaux. En respectant les principes du contradictoire, l'expert produit un rapport détaillé, juridiquement contraignant. Notre engagement se traduit par une disponibilité immédiate et un traitement rapide de votre dossier. Chez nous, votre satisfaction est notre priorité.`;
+L'expertise est un outil essentiel pour éclairer les décisions dans des situations complexes. Fort d'une expérience de plus de 29 ans et certifié par l'OFIB, notre expert principal chez 8N Expertise Bâtiment offre un regard objectif à chaque étape de la mission que vous lui confierai, que ce soit pour un achat, une location, la construction d'une maison ou des travaux. En respectant les principes du contradictoire, l'expert produit un rapport détaillé, juridiquement opposable. Notre engagement se traduit par une disponibilité immédiate et un traitement rapide de votre dossier. Chez nous, votre satisfaction est notre priorité.`;
 
 	const categoriesOnIntervientSur: Category[] = [
-		{ id: 1, label: 'Problèmes Structurels' },
+		{ id: 1, label: 'Désordres' },
 		{ id: 2, label: 'Transactions Immobilières' },
 		{ id: 3, label: 'Assurance et Sinistres' },
 		{ id: 4, label: 'Travaux et Construction' },
-		{ id: 5, label: 'Juridique et Litiges' },
-		{ id: 6, label: 'Conseils Techniques' }
+		{ id: 5, label: 'Juridique et Litiges' }
 	];
 
 	const listOnIntervientSur: ListItem[] = [
 		{
 			category: 1,
 			title: 'Malfaçons',
-			description: 'Identification et expertise des défauts de construction ou de réalisation.'
+			description: 'Identification et expertise des défauts de réalisation.'
 		},
 		{
 			category: 1,
@@ -165,12 +159,6 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 				"Évaluation technique d'un bien immobilier avant sa mise en vente ou son acquisition."
 		},
 		{
-			category: 2,
-			title: 'Constat d’habitabilité',
-			description:
-				"Évaluation des conditions d'habitabilité d'un bien immobilier selon les normes en vigueur."
-		},
-		{
 			category: 3,
 			title: 'Expert d’assuré',
 			description:
@@ -180,13 +168,7 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 			category: 3,
 			title: 'CAT NAT',
 			description:
-				"Expertise suite à un sinistre lié à une catastrophe naturelle, avec défense des droits auprès de l'assurance."
-		},
-		{
-			category: 3,
-			title: 'Dégâts des eaux',
-			description:
-				"Intervention après des dégâts des eaux pour évaluer les dommages et assister dans les démarches d'assurance."
+				"Expertise suite à un sinistre lié à une catastrophe naturelle, sècheresse ou inondation et défense des droits de l'assuré."
 		},
 		{
 			category: 3,
@@ -196,15 +178,9 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 		},
 		{
 			category: 3,
-			title: 'Responsabilité civile',
+			title: 'Incendie, inondation, tempête...',
 			description:
-				'Expertise en cas de dommages causés par un tiers, avec assistance dans les litiges civils.'
-		},
-		{
-			category: 3,
-			title: 'Incendie',
-			description:
-				"Intervention après un incendie pour évaluer les dommages et soutenir dans les démarches d'assurance."
+				"Intervention après un incendie, une inondation, ou une tempête pour évaluer les dommages et défendre les droits de l'assuré."
 		},
 		{
 			category: 4,
@@ -219,16 +195,16 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 				'Accompagnement technique lors de procédures judiciaires nécessitant une expertise dans le domaine du bâtiment.'
 		},
 		{
-			category: 6,
-			title: 'Assistance et conseils techniques',
-			description:
-				"Fourniture de conseils et d'assistance technique pour divers aspects liés au bâtiment."
-		},
-		{
 			category: 5,
 			title: 'Trouble anormal du voisinage',
 			description:
 				'Intervention en cas de problèmes de voisinage impactant la qualité de vie, avec expertise technique.'
+		},
+		{
+			category: 5,
+			title: 'Vices cachés',
+			description:
+				"Réalisation d'une expertise à la preuve du vice caché et mise à la cause du vendeur."
 		}
 	];
 </script>
@@ -259,14 +235,7 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 	<BlocImagesTextList
 		subTitle="Question"
 		title="Expert en bâtiment, c'est quoi ?"
-		bodyText="Assurez la solidité de vos constructions avec notre service d'expertise en bâtiment. Nous offrons une inspection approfondie, des rapports détaillés et des conseils d'experts pour garantir la qualité de vos biens immobiliers. Découvrez comment notre expertise peut contribuer à la sécurité et à la valeur de vos investissements."
-		listItems={[
-			'Inspection Pointue',
-			'Détection Précoce',
-			'Rapports Détaillés',
-			'Conseils Expérimentés',
-			'Litiges Éclairés'
-		]}
+		bodyText="L'expert en bâtiment identifie les désordres, évalue les risques, détermine garanties et recours en cas de responsabilité, suggère des solutions de réparation, et accompagne le processus jusqu'à un protocole d'accord pour la réparation ou l'indemnisation du dommage. Au besoin, il intervient jusqu'à la procédure judiciaire en tant que conseil technique de partie. Son rôle est d'assurer un suivi complet, du diagnostic initial à la résolution finale, garantissant la protection de vos intérêts dans toutes les phases du processus lié aux problèmes de construction."
 		images={imagesForBlocImagesTextList}
 	/>
 </section>
@@ -275,9 +244,9 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 	<BlocPhoto />
 </section>
 
-<section class="pb-40">
+<!-- <section class="pb-40">
 	<PrestationsBloc />
-</section>
+</section> -->
 
 <section class="pb-40">
 	<GridListItems

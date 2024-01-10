@@ -40,6 +40,8 @@
 	"type": "module",
 	"dependencies": {
 		"@types/nodemailer": "^6.4.14",
+		"@zerodevx/svelte-toast": "^0.9.5",
+		"multer": "1.4.5-lts.1",
 		"nodemailer": "^6.9.7",
 		"tailwind-merge": "^2.1.0"
 	}

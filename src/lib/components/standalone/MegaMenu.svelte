@@ -50,13 +50,13 @@
 		{
 			id: 1,
 			title: 'Expertise malfaçon, désordre, litige...',
-			href: '/prestations/expertises/completes',
+			href: '/prestations/expertises/avec-rapport',
 			text: "L'équipe propose des prestations en tous genres"
 		},
 		{
 			id: 2,
-			title: 'Assistance Sinistres',
-			href: '/prestations/assistance/expertise-apres-sinistre',
+			title: "Assistance sinistres / Expert d'assuré",
+			href: '/prestations/assistance/assistance-apres-sinistre',
 			text: 'Assistance Sinistres assurances, catastrophe naturelle, contre expertise'
 		},
 		{
@@ -71,8 +71,8 @@
 		{
 			id: 1,
 			parent: 1,
-			title: "Mission d'expertise complète",
-			href: '/prestations/expertises/completes',
+			title: "Mission d'expertise avec rapport",
+			href: '/prestations/expertises/avec-rapport',
 			text: "Une fois sa mission clairement établie,votre expert va mener pour vous une mission d'expertise et identifier le désordre ou problème, sa nature et sa cause."
 		},
 		{
@@ -92,8 +92,8 @@
 		{
 			id: 4,
 			parent: 2,
-			title: 'Expertise après sinistre',
-			href: '/prestations/assistance/expertise-apres-sinistre',
+			title: 'Assistance après sinistre',
+			href: '/prestations/assistance/assistance-apres-sinistre',
 			text: 'Votre expert vous assiste comme expert d’assuré pour l’évaluation des dommages directs sur les bâtiments, matériels, mobiliers, marchandises...'
 		},
 		{
@@ -105,9 +105,9 @@
 		},
 		{
 			id: 6,
-			parent: 2,
+			parent: 1,
 			title: 'Judiciaire',
-			href: '/prestations/assistance/judiciaire',
+			href: '/prestations/expertises/judiciaire',
 			text: "Réunion d'expertise Judiciaire"
 		},
 		{

@@ -6,6 +6,7 @@
 	import MegaMenu from '../standalone/MegaMenu.svelte';
 	import { browser } from '$app/environment';
 	import { twMerge } from 'tailwind-merge';
+	import Logo from '../svg/Logo.svelte';
 
 	let currentLink = '';
 
@@ -34,11 +35,16 @@
 		: ''} {currentLink !== '/' ? 'bg-slate-600/30 backdrop-blur-lg' : ''}"
 >
 	<a class="z-50" href="/">
-		{#if isMenuOpen}
+		<Logo
+			class="h-12 w-12"
+			backgoundColor={isMenuOpen ? '#1D4ED8' : '#6B728033'}
+			logoColor="#fff"
+		/>
+		<!-- {#if isMenuOpen}
 			<img src="/images/logo-blue.svg" alt="" class="h-8" />
 		{:else}
 			<img src="/images/logo.svg" alt="" class="h-8" />
-		{/if}
+		{/if} -->
 	</a>
 
 	<div class="absolute hidden md:block top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
@@ -67,13 +73,15 @@
 		</ul>
 	</div>
 
-	<Button
-		class="hidden md:flex"
-		text="Nous contacter"
-		color="primary"
-		to="/contact"
-		selected={currentLink === '/'}><Headphones slot="icon" /></Button
-	>
+	{#if (!isOnHeader || currentLink !== '/') && currentLink !== '/contact'}
+		<Button
+			class="hidden md:flex"
+			text="Nous contacter"
+			color="primary"
+			to="/contact"
+			selected={currentLink === '/'}><Headphones slot="icon" /></Button
+		>
+	{/if}
 
 	<!-- create a hamburger menu -->
 	<div class="md:hidden">
@@ -156,7 +164,7 @@
 
 							<a
 								on:click={toggleMenu}
-								href="/prestations/expertises/completes"
+								href="/prestations/expertises/avec-rapport"
 								class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
 							>
 								<span class="ml-3 text-base font-medium text-gray-900">Prestations</span>

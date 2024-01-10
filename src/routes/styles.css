@@ -1,0 +1,6 @@
+:root {
+	--toastContainerTop: auto;
+	--toastContainerRight: 4rem;
+	--toastContainerBottom: 4rem;
+	--toastContainerLeft: auto;
+}

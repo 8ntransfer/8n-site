@@ -30,69 +30,73 @@
 							Nos missions
 						</p>
 						<p class="mt-6 text-lg leading-8 text-gray-600">
-							Découvrez notre expertise immobilière complète. Opus Expertises vous accompagne à
-							chaque étape de votre projet, que ce soit pour résoudre des malfaçons, traiter des
-							sinistres, ou évaluer un bien avant l'achat.
+							Découvrez nos domaines d'expertise. Nous proposons des missions variées telles que
+							l'avis oral, la note expertale ou le rapport d'expertise amiable, juridiquement
+							opposable pour s'adapter à vos besoins et défendre au mieux vos intérêts.
 						</p>
 					</div>
 
 					<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
 						<a
-							href="/prestations/expertises/completes"
+							href="/prestations/expertises/avec-rapport"
 							class={twMerge(
-								'relative block pl-6 hover:bg-gray-100 p-4 rounded-lg cursor-pointer',
+								'relative block ',
 								`transition-all duration-300  translate-x-[-2%] opacity-0`,
 								hasIntersected && 'opacity-100 translate-x-0 '
 							)}
-							style=" transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1); transition-delay: 300ms;"
+							style=" transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1) 300ms,transform .6s cubic-bezier(0.16, 1, 0.3, 1) 300ms, background .3s ease-in 0s;"
 						>
-							<dt class="inline font-semibold text-gray-900 relative">
-								Expertise Malfaçon, Désordre, Litige...
-							</dt>
-							<dd class="inline">
-								Pour fissures, traces d'humidité, litiges artisans, notre mission identifie,
-								analyse, et propose des solutions. Rapport détaillé juridiquement opposable.
-							</dd>
+							<div class="pl-6 p-4 rounded-lg cursor-pointer hover:bg-gray-100">
+								<dt class="inline font-semibold text-gray-900 relative">Expertise désordres –</dt>
+								<dd class="inline">
+									Malfaçon • garantie décennale • litiges chantier • défauts esthétiques • fissures
+									gros œuvres et second œuvre • humidité • infiltration • isolation thermique • vice
+									caché
+								</dd>
+							</div>
 						</a>
 						<a
-							href="/prestations/assistance/expertise-apres-sinistre"
+							href="/prestations/assistance/assistance-apres-sinistre"
 							class={twMerge(
-								'relative block pl-6 hover:bg-gray-100 p-4 rounded-lg cursor-pointer',
+								'relative block',
 								`transition-all duration-300  translate-x-[-2%] opacity-0`,
 								hasIntersected && 'opacity-100 translate-x-0 '
 							)}
 							style=" transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1); transition-delay: 400ms;"
 						>
-							<dt class="inline relative font-semibold text-gray-900">
-								Assistance Sinistres Assurances, Catastrophe Naturelle, Contre-Expertise
-							</dt>
-							<dd class="inline">
-								En cas de sinistre, évaluation des dommages, soutien face à l'assurance. De la
-								négociation à l'indemnisation totale.
-							</dd>
+							<div class="pl-6 p-4 rounded-lg cursor-pointer hover:bg-gray-100">
+								<dt class="inline relative font-semibold text-gray-900">
+									Assistance règlement de sinistre et contre expertise d'assurance
+								</dt>
+								<dd class="inline">
+									Incendie, inondation , tempête • Catastrophe naturelle sécheresse ou inondation
+								</dd>
+							</div>
 						</a>
 						<a
 							href="/prestations/avis"
 							class={twMerge(
-								'relative block pl-6 hover:bg-gray-100 p-4 rounded-lg cursor-pointer',
+								'relative block ',
 								`transition-all duration-300  translate-x-[-2%] opacity-0`,
 								hasIntersected && 'opacity-100 translate-x-0 '
 							)}
 							style=" transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1); transition-delay: 500ms;"
 						>
-							<dt class="inline font-semibold text-gray-900 relative">
-								Avis Avant Achat/Vente avec ou sans Rapport d'Expertise
-							</dt>
-							<dd class="inline">
-								Avant l'achat, notre avis évalue la structure, identifie les désordres, propose des
-								solutions. Compte rendu détaillé avec photos des désordres identifiés.
-							</dd>
+							<div class="pl-6 p-4 rounded-lg cursor-pointer hover:bg-gray-100">
+								<dt class="inline font-semibold text-gray-900 relative">
+									Avis avant achat ou vente d'un bien immobilier
+								</dt>
+								<dd class="inline">
+									Avis sur un désordre identifiés • Audit général des partie visibles de l'enveloppe
+									extérieure et du second œuvre
+								</dd>
+							</div>
 						</a>
 					</dl>
 				</div>
 			</div>
 			<img
-				src="/images/photos/isolation.png"
+				src="/images/photos/fissure_fenetre.jpg"
 				alt="Isolation d'une maison"
 				class="sticky bottom-0 top-0 w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
 				width="2432"

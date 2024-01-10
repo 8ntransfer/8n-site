@@ -29,7 +29,7 @@
 						</li>
 						<li class="mb-4 transition-colors duration-200">
 							<a
-								href="/prestations/expertises/completes"
+								href="/prestations/expertises/avec-rapport"
 								class="py-2 px-4 rounded-md hover:bg-gray-200"
 							>
 								Prestations
@@ -45,14 +45,41 @@
 				<div class="">
 					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">Zone d'intervention</h2>
 					<ul>
-						<li class="mb-4 transition-colors duration-200 py-2 px-4 rounded-md hover:bg-gray-200">
-							Toulouse, Lauragais-Montagne Noire ,Tarn, Aude
+						<li class="mb-4 transition-colors duration-200">
+							<a
+								href="https://maps.app.goo.gl/vq5CJZfPxT6X931C6"
+								rel="noreferrer"
+								target="_blank"
+								class="py-2 px-4 rounded-md hover:bg-gray-200"
+							>
+								Haute Garonne
+							</a>
+						</li>
+						<li class="mb-4 transition-colors duration-200">
+							<a
+								href="https://maps.app.goo.gl/iYFq5dbs5w3F1Q4J9"
+								rel="noreferrer"
+								target="_blank"
+								class="py-2 px-4 rounded-md hover:bg-gray-200"
+							>
+								Tarn
+							</a>
+						</li>
+						<li class="mb-4 transition-colors duration-200">
+							<a
+								href="https://maps.app.goo.gl/kvWtp7jUYyU1xSbJA"
+								rel="noreferrer"
+								target="_blank"
+								class="py-2 px-4 rounded-md hover:bg-gray-200"
+							>
+								Aude
+							</a>
 						</li>
 					</ul>
 				</div>
 			</li>
 		</ul>
-		<div class="pt-8 flex border-t border-gray-200 max-w-xs mx-auto items-center justify-between">
+		<!-- <div class="pt-8 flex border-t border-gray-200 max-w-xs mx-auto items-center justify-between">
 			<a href="#">
 				<svg
 					width="20"
@@ -123,7 +150,7 @@
 					/>
 				</svg>
 			</a>
-		</div>
+		</div> -->
 		<div class="text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
 			8N Expertise en Bâtiment © {currentYear}. Site réalisé par Corentin Gobbo.
 		</div>

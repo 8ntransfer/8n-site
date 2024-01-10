@@ -38,48 +38,52 @@
 						{title}
 					</h4>
 					<p class="mt-4 text-lg leading-loose text-gray-500 dark:text-gray-300">
-						{bodyText}
+						{@html bodyText}
 					</p>
 				</span>
-				<ul class="gap-6 mt-8 md:grid md:grid-cols-2">
-					{#each listItems as listItem, i}
-						<li
-							class={twMerge(
-								'mt-6 lg:mt-0',
-								`flex transition-all duration-300  translate-x-[-2%] opacity-0`,
-								hasIntersected && 'opacity-100 translate-x-0 '
-							)}
-							style=" transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1); transition-delay: {(i +
-								1) *
-								100 +
-								100}ms;"
-						>
-							<div class="flex">
-								<span
-									class="flex items-center justify-center flex-shrink-0 w-6 h-6 text-blue-800 bg-blue-100 rounded-full dark:text-green-500 drark:bg-transparent"
-								>
-									<svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-										<path
-											fill-rule="evenodd"
-											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								</span>
-								<span class="ml-4 text-base font-medium leading-6 text-gray-500 dark:text-gray-200">
-									{listItem}
-								</span>
-							</div>
-						</li>
-					{/each}
-				</ul>
+				{#if listItems.length > 0}
+					<ul class="gap-6 mt-8 md:grid md:grid-cols-2">
+						{#each listItems as listItem, i}
+							<li
+								class={twMerge(
+									'mt-6 lg:mt-0',
+									`flex transition-all duration-300  translate-x-[-2%] opacity-0`,
+									hasIntersected && 'opacity-100 translate-x-0 '
+								)}
+								style=" transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1); transition-delay: {(i +
+									1) *
+									100 +
+									100}ms;"
+							>
+								<div class="flex">
+									<span
+										class="flex items-center justify-center flex-shrink-0 w-6 h-6 text-blue-800 bg-blue-100 rounded-full dark:text-green-500 drark:bg-transparent"
+									>
+										<svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</span>
+									<span
+										class="ml-4 text-base font-medium leading-6 text-gray-500 dark:text-gray-200"
+									>
+										{listItem}
+									</span>
+								</div>
+							</li>
+						{/each}
+					</ul>
+				{/if}
 			</div>
 			<div class="relative mt-10 lg:-mx-4 relative-20 lg:mt-0 lg:col-start-1">
 				<div class="relative space-y-4">
 					<div class="flex items-end justify-center space-x-4 lg:justify-start">
 						<img
 							class={twMerge(
-								'w-32 rounded-lg shadow-lg md:w-56 transition-all duration-300 delay-100 ease-in blur-sm',
+								'w-50 rounded-lg shadow-lg md:w-56 transition-all duration-300 delay-100 ease-in blur-sm',
 								hasIntersected && 'blur-none'
 							)}
 							width="200"
@@ -88,7 +92,7 @@
 						/>
 						<img
 							class={twMerge(
-								'w-40 rounded-lg shadow-lg md:w-64  transition-all duration-300 delay-200 ease-in blur-sm',
+								'w-60 rounded-lg shadow-lg md:w-64  transition-all duration-300 delay-200 ease-in blur-sm',
 								hasIntersected && 'blur-none'
 							)}
 							width="260"
@@ -99,7 +103,7 @@
 					<div class="flex items-start justify-center ml-12 space-x-4 lg:justify-start">
 						<img
 							class={twMerge(
-								'w-24 rounded-lg shadow-lg md:w-40  transition-all duration-300 delay-300 ease-in blur-sm',
+								'w-40 rounded-lg shadow-lg md:w-40  transition-all duration-300 delay-300 ease-in blur-sm',
 								hasIntersected && 'blur-none'
 							)}
 							width="170"
@@ -108,7 +112,7 @@
 						/>
 						<img
 							class={twMerge(
-								'w-32 rounded-lg shadow-lg md:w-56  transition-all duration-300 delay-400 ease-in blur-sm',
+								'w-50 rounded-lg shadow-lg md:w-56  transition-all duration-300 delay-400 ease-in blur-sm',
 								hasIntersected && 'blur-none'
 							)}
 							width="200"

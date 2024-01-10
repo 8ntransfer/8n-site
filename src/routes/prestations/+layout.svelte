@@ -18,8 +18,8 @@
 			title: 'Expertise malfaçon, désordre, litige...',
 			links: [
 				{
-					title: "Mission d'expertise complète",
-					href: '/prestations/expertises/completes'
+					title: "Mission d'expertise avec rapport",
+					href: '/prestations/expertises/avec-rapport'
 				},
 				{
 					title: 'Expertise avec Avis Oral',
@@ -28,23 +28,23 @@
 				{
 					title: 'Expertise avec Note Expertale',
 					href: '/prestations/expertises/note-expertale'
+				},
+				{
+					title: 'Judiciaire',
+					href: '/prestations/expertises/judiciaire'
 				}
 			]
 		},
 		{
-			title: 'Assistance Sinistres',
+			title: "Assistance sinistres / Expert d'assuré",
 			links: [
 				{
-					title: 'Expertise après sinistre',
-					href: '/prestations/assistance/expertise-apres-sinistre'
+					title: 'Assistance après sinistre',
+					href: '/prestations/assistance/assistance-apres-sinistre'
 				},
 				{
 					title: 'Catastrophe naturelle',
 					href: '/prestations/assistance/catastrophes-naturelles'
-				},
-				{
-					title: 'Judiciaire',
-					href: '/prestations/assistance/judiciaire'
 				}
 			]
 		},
@@ -85,7 +85,7 @@
 			</optgroup>{/each}
 	</select>
 	<div
-		class="hidden md:flex sticky top-[4.75rem] ml-10 h-[calc(100vh-4.75rem)] w-96 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16"
+		class="hidden md:flex sticky top-[4.75rem] ml-10 h-[calc(100vh-4.75rem)] w-96 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-96 xl:pr-16"
 	>
 		<nav class="text-base lg:text-sm">
 			<ul role="list" class="space-y-9">
@@ -112,8 +112,8 @@
 			</ul>
 		</nav>
 	</div>
-	<div class="mx-4 flex justify-center items-center pt-12 pr-10 pb-20">
-		<div class="md:max-w-2xl"><slot /></div>
+	<div class="mx-4 flex justify-center self-start items-center pt-12 pr-10 pb-20">
+		<div class="md:max-w-4xl"><slot /></div>
 	</div>
 </div>
 <Footer />

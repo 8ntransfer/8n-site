@@ -1,9 +1,22 @@
 <script lang="ts">
+	import { enhance } from '$app/forms';
 	import Map from '~icons/mdi/map';
+	import { success, warning } from '$lib/utils/toast';
 
 	let isOptionSelected = false;
 	let buttonDisabled = true;
 	const REGEX_EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	let formSending = false;
+	let files: FileList = [];
+	let filesImages: string[] = [];
+
+	$: if (files.length > 0) {
+		console.log(files);
+		filesImages = [];
+		for (let i = 0; i < files.length; i++) {
+			filesImages.push(URL.createObjectURL(files[i]));
+		}
+	}
 
 	async function handleSubmit(form) {
 		const data = new URLSearchParams(new FormData(form.srcElement));
@@ -11,7 +24,7 @@
 		const response = await fetch('/api/contact', {
 			method: 'POST',
 			headers: {
-				'Content-Type': 'application/json'
+				'Content-Type': 'multipart/form-data'
 			},
 			body: JSON.stringify(Object.fromEntries(data))
 		});
@@ -23,6 +36,23 @@
 		console.log(res);
 	}
 
+	const enhanceForm = ({ formElement, formData, action, cancel }) => {
+		const images = formData.getAll('attachments');
+
+		if (images.length > 5) {
+			warning('Vous ne pouvez pas envoyer plus de 5 images');
+			cancel();
+		}
+
+		formSending = true;
+
+		return async () => {
+			success('Votre message a bien été envoyé !');
+			formElement.reset();
+			formSending = false;
+		};
+	};
+
 	function handleSelect(e) {
 		isOptionSelected = e.target.value !== '';
 	}
@@ -32,12 +62,12 @@
 
 		const data = new URLSearchParams(new FormData(form));
 
-		console.log(data, Object.fromEntries(data));
 		const formData = Object.fromEntries(data);
 
 		const isFormValid =
 			Object.keys(formData).every((key) => formData[key] !== '') &&
-			REGEX_EMAIL.test(formData.email);
+			REGEX_EMAIL.test(formData.email) &&
+			data.getAll('attachments').length <= 5;
 
 		buttonDisabled = !isFormValid;
 	}
@@ -129,8 +159,8 @@
 						Zone de couverture
 					</h2>
 					<span class="text-base font-medium text-gray-500 md:text-lg dark:text-gray-400"
-						>Toulouse, Lauragais-Montagne Noire ,Tarn, Aude</span
-					>
+						>Haute Garonne – Tarn – Aude
+					</span>
 				</div>
 			</div>
 			<!-- <div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
@@ -213,7 +243,13 @@
 		<div
 			class="px-8 py-8 bg-white border rounded-md shadow-sm dark:border-gray-800 dark:bg-gray-800"
 		>
-			<form on:input={handleFormInput} on:submit|preventDefault={handleSubmit}>
+			<form
+				on:input={handleFormInput}
+				method="post"
+				enctype="multipart/form-data"
+				use:enhance={enhanceForm}
+				action="?/upload"
+			>
 				<div class="mb-6">
 					<h2 class="text-xl font-bold text-gray-00 dark:text-gray-400">
 						Envoyez-nous un message !
@@ -257,13 +293,12 @@
 				>
 					<option value="" selected> Sélectionnez une option </option>
 					<option value="probleme-chantier"> Problème de chantiers </option>
-					<option value="secu-immo"> Sécurisation de transaction Immobilières </option>
 					<option value="sinistre"> Expertise d'assuré lors de sinistre </option>
 					<option value="reception-travaux"> Assistance à réception de travaux </option>
 					<option value="conseils-techniques"> Assistance et conseils techniques </option>
 					<option value="judiciaire"> Assistance d'expertise judiciaire </option>
-					<option value="constat-habitabilité"> Constat d'habitabilité </option>
 					<option value="trouble-voisinage"> Trouble anormal de voisinage </option>
+					<option value="autres"> Autres questions </option>
 				</select>
 				<textarea
 					rows="4"
@@ -273,11 +308,70 @@
 					class="block w-full px-4 mb-4 leading-tight text-gray-700 border rounded bg-gray-50 dark:placeholder-gray-400 py-7 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-700"
 				/>
 
+				<!-- <input name="attachments" type="file" multiple accept="image/*" /> -->
+
+				<div class="flex items-center justify-center w-full mb-4">
+					<label
+						for="attachments"
+						class="flex w-full h-auto border-gray-300 border rounded cursor-pointer text-gray-700 bg-gray-50 hover:bg-gray-100"
+					>
+						<div class="flex w-full justify-between py-2 px-4">
+							<div class="flex items-center justify-center">
+								<svg
+									class="w-6 h-6 text-gray-500 dark:text-gray-400"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 20 16"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+									/>
+								</svg>
+								{#if files.length === 0}
+									<p class="ml-2 text-sm text-gray-500 dark:text-gray-400">
+										<span class="font-semibold">Joindre vos photos</span> (max 5)
+									</p>
+								{:else if files.length > 5}
+									<p class="ml-2 text-sm text-gray-500 dark:text-gray-400">
+										Trop de fichiers sélectionnés (max 5)
+									</p>
+								{:else}
+									<p class="ml-2 text-sm text-gray-500 dark:text-gray-400">
+										{files.length} fichiers sélectionnés
+									</p>
+								{/if}
+							</div>
+
+							<div class="flex gap-2">
+								{#if files.length > 0 && files.length <= 5}
+									{#each filesImages as file}
+										<img src={file} class="h-8 w-8 rounded" alt="uploaded-image" />
+									{/each}
+								{/if}
+							</div>
+						</div>
+						<input
+							id="attachments"
+							class="hidden"
+							name="attachments"
+							type="file"
+							multiple
+							accept="image/*"
+							bind:files
+						/>
+					</label>
+				</div>
+
 				<button
 					disabled={buttonDisabled}
 					class="w-full py-4 text-sm font-bold leading-normal text-white transition-all duration-300 bg-blue-600 rounded-md dark:bg-blue-500 dark:hover:bg-blue-600 hover:bg-blue-700 disabled:opacity-50"
 				>
-					Envoyer
+					{formSending ? 'Envoi en cours...' : 'Envoyer'}
 				</button>
 			</form>
 		</div>

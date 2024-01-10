@@ -8,8 +8,6 @@
 	let hasIntersected = false;
 
 	const isIntersecting = () => {
-		console.log('isIntersecting');
-
 		hasIntersected = true;
 	};
 </script>

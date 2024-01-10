@@ -1,17 +1,17 @@
 <h1 class="mb-4 text-3xl font-bold lg:text-4xl font-heading dark:text-white">
-	<span class="text-blue-600">Mission d'Expertise en Cas de Catastrophe Naturelle</span> Rétablissez
+	<span class="text-blue-600">Mission d'Expertise en cas de Catastrophe Naturelle</span> Rétablissez
 	l'Équilibre de Votre Habitat
 </h1>
 
-<p class="leading-loose text-gray-500 dark:text-gray-300">
-	Votre maison présente des fissures suite à une période de sécheresse, et vous êtes désorienté face
-	à cet événement. Ne restez pas seul dans cette épreuve.
+<p class="leading-loose text-gray-500 dark:text-gray-300 mb-8">
+	Votre maison présente des fissures suite à une période de sécheresse, ou vous avez subi de graves
+	inondations et vous êtes désorienté face à cet événement. Ne restez pas seul dans cette épreuve.
 </p>
-<span
+<!-- <span
 	class="inline-flex justify-between items-center py-1 px-2 text-sm mt-2 mb-8 text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
 >
 	<span class="text-sm font-medium">Un Soutien Inestimable Face à la Nature Déchaînée </span>
-</span>
+</span> -->
 <div class="w-full h-[1px] bg-gray-200" />
 
 <article class="mt-20">
@@ -24,8 +24,8 @@
 
 	<h4>2. Analyse Rigoureuse de Votre Contrat d'Assurance</h4>
 	<p>
-		Notre équipe d'experts analyse en profondeur votre contrat d'assurance, s'assurant de bien
-		comprendre les termes et les conditions liés à la catastrophe naturelle.
+		Notre expert analyse en profondeur votre contrat d'assurance, déterminant ainsi les bases de la
+		prise en charge par votre assureur.
 	</p>
 
 	<h4>3. Identification Précise des Dommages</h4>

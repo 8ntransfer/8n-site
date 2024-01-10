@@ -6,7 +6,7 @@
 
 <header class="relative h-[90vh]">
 	<img
-		src="/images/header/header-wallpaper-2.png"
+		src="/images/header/header-wallpaper-3.png"
 		alt=""
 		class="absolute inset-0 h-full w-full object-cover"
 	/>
@@ -42,14 +42,14 @@
 			<h1
 				class="text-white self-center justify-self-center text-center text-4xl md:self-start md:text-left md:text-5xl lg:text-6xl font-extrabold tracking-tight titleHome"
 			>
-				Vous avez besoin de <span class="">Conseil ?</span><br /> 8N est là pour vous accompagner
+				Sinistre, litige, malfaçon, fissures... <br /> Vos intérêts, notre priorité.
 			</h1>
 			<h2
 				class="mt-3 text-lg text-center self-center md:self-start md:text-left text-white sm:mt-5 sm:max-w-xl md:mt-5 md:text-xl lg:mx-0"
 			>
-				Découvrez l'expertise qui va au-delà des normes. 8N Expertise en bâtiment, votre partenaire
-				de confiance, résout vos défis immobiliers avec précision et engagement. Explorez la qualité
-				à chaque détail.
+				8N expertise bâtiment vous accompagne dans la gestion des sinistres, malfaçons, litiges avec
+				entreprises, et conseils relatifs à l'état structurel ou pathologies du bâtiment. La rigueur
+				et l'indépendance sont le mettre mots de la conduite de nos mission.
 			</h2>
 			<div
 				class="flex w-full mt-5 self-center items-center justify-self-center justify-center md:justify-start"
@@ -59,7 +59,7 @@
 					text="Nos prestations"
 					btnSize="medium"
 					color="white"
-					to="/prestations/expertises/completes"
+					to="/prestations/expertises/avec-rapport"
 					class="ml-2"
 				/>
 			</div>
