@@ -36,7 +36,7 @@
 >
 	<a class="z-50" href="/">
 		<Logo
-			class="h-12 w-12"
+			class="h-16 w-16"
 			backgoundColor={isMenuOpen ? '#1D4ED8' : '#6B728033'}
 			logoColor="#fff"
 		/>
