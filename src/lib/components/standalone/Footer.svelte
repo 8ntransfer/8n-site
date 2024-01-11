@@ -130,17 +130,10 @@
 				</svg>
 			</a>
 		</div> -->
-		<div class="text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
-			8N Expertise en Bâtiment © {currentYear}.
-			<span class="ml-1"
-				>Site réalisé par
-				<a
-					href="https://www.linkedin.com/in/corentin-gobbo-667b02187/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="ml-1">Corentin Gobbo</a
-				>.</span
-			>
+		<div
+			class="text-center pt-10 sm:pt-12 font-light flex flex-col sm:flex-row items-center justify-center"
+		>
+			<span>8N Expertise en Bâtiment © {currentYear}.</span>
 		</div>
 	</div>
 </footer>
