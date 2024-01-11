@@ -5,14 +5,14 @@
 <footer class=" bg-gray-100 pt-4 pb-8 xl:pt-8">
 	<div class="max-w-screen-lg px-4 mx-auto xl:max-w-screen-xl sm:px-6 md:px-8 text-gray-400">
 		<ul
-			class="flex flex-wrap flex-col justify-center items-center md:flex-row justify-center pb-8 text-lg font-light"
+			class="flex flex-wrap items-center md:items-start md:flex-row justify-center pb-8 text-lg font-light"
 		>
-			<li class="w-1/2 md:w-1/4 lg:w-1/4">
+			<li class="w-full sm:w-1/2 mb-8 md:w-1/4 lg:w-1/4">
 				<div class="text-center">
 					<img src="/images/logo-old.png" alt="logo" class="h-60" />
 				</div>
 			</li>
-			<li class="w-1/2 md:w-1/4 lg:w-1/4">
+			<li class="w-full sm:w-1/2 mb-8 md:w-1/4 lg:w-1/4">
 				<div class="pr-10">
 					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">A propos</h2>
 					<p>
@@ -22,7 +22,7 @@
 					</p>
 				</div>
 			</li>
-			<li class="w-1/2 md:w-1/4 lg:w-1/4">
+			<li class="w-full sm:w-1/2 mb-8 md:w-1/4 lg:w-1/4">
 				<div class="">
 					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">Navigation rapide</h2>
 					<ul>
@@ -43,7 +43,7 @@
 					</ul>
 				</div>
 			</li>
-			<li class="w-1/2 md:w-1/4 lg:w-1/4">
+			<li class="w-full sm:w-1/2 mb-8 md:w-1/4 lg:w-1/4">
 				<div class="">
 					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">Adresse</h2>
 					<a

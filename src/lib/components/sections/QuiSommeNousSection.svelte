@@ -33,7 +33,7 @@
 		<span class="px-3 py-1 text-xs flex items-center rounded-full text-blue-600 bg-blue-200">
 			Video
 		</span>
-		<h3 class="text-xl font-medium">Expert en bâtiment, késako ?</h3>
+		<h3 class="text-xl font-medium">Expert en bâtiment, késako&nbsp;?</h3>
 		<p class="text-slate-500">
 			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates voluptatum voluptatibus
 			soluta repellendus impedit quae voluptas dolores neque sed nulla deleniti nostrum repellat

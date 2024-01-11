@@ -237,7 +237,7 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 <section class="pb-40">
 	<BlocImagesTextList
 		subTitle="Question"
-		title="Expert en bâtiment, c'est quoi ?"
+		title="Expert en bâtiment, c'est quoi&nbsp;?"
 		bodyText="L'expert en bâtiment identifie les désordres, évalue les risques, détermine garanties et recours en cas de responsabilité, suggère des solutions de réparation, et accompagne le processus jusqu'à un protocole d'accord pour la réparation ou l'indemnisation du dommage. Au besoin, il intervient jusqu'à la procédure judiciaire en tant que conseil technique de partie. Son rôle est d'assurer un suivi complet, du diagnostic initial à la résolution finale, garantissant la protection de vos intérêts dans toutes les phases du processus lié aux problèmes de construction."
 		images={imagesForBlocImagesTextList}
 	/>

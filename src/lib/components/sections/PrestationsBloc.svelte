@@ -21,7 +21,7 @@
 				hasIntersected && 'blur-none opacity-100 translate-y-0'
 			)}
 		>
-			<span class="block">“Besoin d'un expert pour suivre mon chantier ?”</span>
+			<span class="block">“Besoin d'un expert pour suivre mon chantier&nbsp;?”</span>
 			<span class="block font-medium text-xl mt-2 text-blue-500"
 				>8N Expertise et bâtiment un expert indépendant à vos côtés
 			</span>

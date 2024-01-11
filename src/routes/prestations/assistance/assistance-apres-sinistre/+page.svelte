@@ -4,8 +4,9 @@
 </h1>
 <p class="leading-loose text-gray-500 dark:text-gray-300 mb-8">
 	Vous venez de vivre un gros sinistre sur votre habitation et vous n’êtes pas satisfait de
-	l'indemnisation proposé par votre assureur ? Notre mission est de vous faire obtenir la meilleure
-	indemnisation possible au regard de votre contrat d'assurance MRH (Multi Risque Habitation).
+	l'indemnisation proposé par votre assureur&nbsp;? Notre mission est de vous faire obtenir la
+	meilleure indemnisation possible au regard de votre contrat d'assurance MRH (Multi Risque
+	Habitation).
 </p>
 <!-- <span
 	class="inline-flex justify-between items-center py-1 px-2 text-sm mt-2 text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"

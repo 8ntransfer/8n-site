@@ -13,9 +13,9 @@
 	<h3>Pourquoi Choisir une Mission d'expertise avec rapport?</h3>
 	<h4>Identification Précise des Problèmes</h4>
 	<ul>
-		<li>Vous avez une fissure sur votre façade ?</li>
-		<li>Des traces d'humidités sur les murs ?</li>
-		<li>Le carrelage de la salle à manger se décolle ou se fissure ?</li>
+		<li>Vous avez une fissure sur votre façade&nbsp;?</li>
+		<li>Des traces d'humidités sur les murs&nbsp;?</li>
+		<li>Le carrelage de la salle à manger se décolle ou se fissure&nbsp;?</li>
 	</ul>
 	<p>Votre expert met en lumière chaque détail, identifiant les désordres visibles et cachés.</p>
 	<h4>Analyse Approfondie</h4>
