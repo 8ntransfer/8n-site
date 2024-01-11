@@ -76,7 +76,7 @@
 					</ul>
 				{/if}
 			</div>
-			<div class="relative mt-10 lg:-mx-4 relative-20 lg:mt-0 lg:col-start-1">
+			<div class="hidden sm:block relative mt-10 lg:-mx-4 relative-20 lg:mt-0 lg:col-start-1">
 				<div class="relative space-y-4">
 					<div class="flex items-end justify-center space-x-4 lg:justify-start">
 						<img

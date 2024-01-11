@@ -20,8 +20,12 @@
 
 <section>
 	<IntersectionObserver on:intersecting={isIntersecting} top={-200} />
-	<div class={twMerge('container p-4 mx-auto bg-white max-w-7xl sm:p-6 lg:p-8 dark:bg-gray-800 ')}>
-		<div class="flex flex-wrap -mx-8">
+	<div
+		class={twMerge(
+			'container sm:max-w-[100vw] p-4 mx-auto bg-white max-w-7xl sm:p-6 lg:p-8 dark:bg-gray-800 '
+		)}
+	>
+		<div class="flex flex-wrap sm:-mx-8">
 			<div
 				class={twMerge(
 					'w-full px-8 lg:w-1/2 transition-all ease-in duration-300 opacity-0 ',
@@ -47,7 +51,7 @@
 					{#each listItems as listItem, i}
 						<li
 							class={twMerge(
-								`flex -mx-4 transition-all duration-300  translate-x-[-2%] opacity-0`,
+								`flex flex-col min-[320px]:flex-row -mx-4 transition-all duration-300  translate-x-[-2%] opacity-0`,
 								hasIntersected && 'opacity-100 translate-x-0 '
 							)}
 							style=" transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1); transition-delay: {(i +

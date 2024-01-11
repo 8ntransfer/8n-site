@@ -64,7 +64,7 @@
 					class="ml-2"
 				/>
 			</div>
-			<div class="mt-4 xs:bg-yellow-200 w-fit self-center md:self-start text-white">
+			<div class="hidden mt-4 sm:flex xs:bg-yellow-200 w-fit self-center md:self-start text-white">
 				Une question spécifique ?
 				<a href="#faq" class="underline cursor-pointer"> Regardez notre FAQ </a>
 			</div>

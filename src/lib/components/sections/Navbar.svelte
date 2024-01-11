@@ -30,13 +30,13 @@
 <svelte:window bind:scrollY={y} />
 
 <nav
-	class="fixed top-0 left-0 w-full flex items-center justify-between py-6 px-10 z-10 transition-all ease-in-out {!isOnTop
+	class="fixed top-0 left-0 w-[100vw] flex items-center justify-between py-6 px-4 md:px-10 z-10 transition-all ease-in-out {!isOnTop
 		? 'bg-slate-600/30 backdrop-blur-lg'
 		: ''} {currentLink !== '/' ? 'bg-slate-600/30 backdrop-blur-lg' : ''}"
 >
 	<a class="z-50" href="/">
 		<Logo
-			class="h-16 w-16"
+			class="h-12 w-12 sm:h-16 sm:w-16"
 			backgoundColor={isMenuOpen ? '#1D4ED8' : '#6B728033'}
 			logoColor="#fff"
 		/>
@@ -120,10 +120,7 @@
 				class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
 			>
 				<div class="pt-5 pb-6 px-5">
-					<div class="flex items-center justify-between">
-						<div>
-							<img class="h-8 w-auto" src="/images/logo.svg" alt="Workflow" />
-						</div>
+					<div class="flex items-center justify-between flex-row-reverse">
 						<div class="-mr-2">
 							<button
 								type="button"

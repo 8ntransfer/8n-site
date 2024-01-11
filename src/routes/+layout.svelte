@@ -17,7 +17,7 @@
 		<Header />
 	{/if}
 
-	<main>
+	<main class="max-w-[100vw]">
 		<slot />
 	</main>
 </div>

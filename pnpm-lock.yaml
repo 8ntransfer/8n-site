@@ -17,6 +17,9 @@ dependencies:
   nodemailer:
     specifier: ^6.9.7
     version: 6.9.7
+  sebastien-website:
+    specifier: 'link:'
+    version: 'link:'
   tailwind-merge:
     specifier: ^2.1.0
     version: 2.1.0

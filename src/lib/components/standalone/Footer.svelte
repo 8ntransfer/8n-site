@@ -4,7 +4,9 @@
 
 <footer class=" bg-gray-100 pt-4 pb-8 xl:pt-8">
 	<div class="max-w-screen-lg px-4 mx-auto xl:max-w-screen-xl sm:px-6 md:px-8 text-gray-400">
-		<ul class="flex flex-wrap justify-center pb-8 text-lg font-light">
+		<ul
+			class="flex flex-wrap flex-col justify-center items-center md:flex-row justify-center pb-8 text-lg font-light"
+		>
 			<li class="w-1/2 md:w-1/4 lg:w-1/4">
 				<div class="text-center">
 					<img src="/images/logo-old.png" alt="logo" class="h-60" />
@@ -129,7 +131,16 @@
 			</a>
 		</div> -->
 		<div class="text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
-			8N Expertise en Bâtiment © {currentYear}. Site réalisé par Corentin Gobbo.
+			8N Expertise en Bâtiment © {currentYear}.
+			<span class="ml-1"
+				>Site réalisé par
+				<a
+					href="https://www.linkedin.com/in/corentin-gobbo-667b02187/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="ml-1">Corentin Gobbo</a
+				>.</span
+			>
 		</div>
 	</div>
 </footer>
