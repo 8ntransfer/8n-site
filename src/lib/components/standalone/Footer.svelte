@@ -43,39 +43,16 @@
 			</li>
 			<li class="w-1/2 md:w-1/4 lg:w-1/4">
 				<div class="">
-					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">Zone d'intervention</h2>
-					<ul>
-						<li class="mb-4 transition-colors duration-200">
-							<a
-								href="https://maps.app.goo.gl/vq5CJZfPxT6X931C6"
-								rel="noreferrer"
-								target="_blank"
-								class="py-2 px-4 rounded-md hover:bg-gray-200"
-							>
-								Haute Garonne
-							</a>
-						</li>
-						<li class="mb-4 transition-colors duration-200">
-							<a
-								href="https://maps.app.goo.gl/iYFq5dbs5w3F1Q4J9"
-								rel="noreferrer"
-								target="_blank"
-								class="py-2 px-4 rounded-md hover:bg-gray-200"
-							>
-								Tarn
-							</a>
-						</li>
-						<li class="mb-4 transition-colors duration-200">
-							<a
-								href="https://maps.app.goo.gl/kvWtp7jUYyU1xSbJA"
-								rel="noreferrer"
-								target="_blank"
-								class="py-2 px-4 rounded-md hover:bg-gray-200"
-							>
-								Aude
-							</a>
-						</li>
-					</ul>
+					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">Adresse</h2>
+					<a
+						href="https://maps.app.goo.gl/BgCFXA8jbyrdaqhM8"
+						rel="noreferrer noopener"
+						target="_blank"
+						class="block py-2 px-4 rounded-md hover:bg-gray-200"
+					>
+						SASU 8N Expertise Bâtiment <br />Burotel Espace Entreprise <br />6 rue Maurice Hurel
+						<br />31500 Toulouse
+					</a>
 				</div>
 			</li>
 		</ul>

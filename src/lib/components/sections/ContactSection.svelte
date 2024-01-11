@@ -127,7 +127,7 @@
 						</svg>
 					</div>
 					<h2 class="mb-4 text-xl font-bold leading-9 text-gray-700 md:text-2xl dark:text-gray-400">
-						Adresse postale
+						Adresse
 					</h2>
 					<span class="text-base font-medium text-gray-500 md:text-lg dark:text-gray-400"
 						>SASU 8N Expertise Bâtiment <br />Burotel Espace Entreprise <br />6 rue Maurice Hurel
