@@ -75,9 +75,9 @@
 
 	<Button
 		class="hidden md:flex"
-		text="+33 6 20 69 72 13"
+		text="+33 6 44 82 83 16"
 		color="primary"
-		to="tel:+33620697213"
+		to="tel:+33644828316"
 		selected={currentLink === '/'}><Headphones slot="icon" /></Button
 	>
 

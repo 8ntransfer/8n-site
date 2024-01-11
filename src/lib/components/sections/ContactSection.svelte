@@ -142,7 +142,7 @@
 				)}
 			>
 				<a
-					href="tel:+33620697213"
+					href="tel:+33644828316"
 					class="h-full block py-12 text-center transition-all rounded-lg shadow-md hover:shadow-xl dark:bg-gray-800"
 				>
 					<div
@@ -165,7 +165,7 @@
 						Téléphone
 					</h2>
 					<span class="text-base font-medium text-gray-500 md:text-lg dark:text-gray-400"
-						>+33 6 20 69 72 13</span
+						>+33 6 44 82 83 16</span
 					>
 				</a>
 			</div>

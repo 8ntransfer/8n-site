@@ -38,7 +38,7 @@ export const upload = async ({ request }) => {
 
 	const mailOptionsForCorentin = {
 		from: 'hello@example.com',
-		to: 's.cavailles81@gmail.com',
+		to: '8n.expertisebatiment@gmail.com',
 		subject: 'Nouveau message du site 8N',
 		text: `
 			Type de contact: ${messageTypes[messageType]}
