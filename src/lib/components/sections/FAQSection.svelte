@@ -15,12 +15,12 @@
 			{#each items as item}
 				<dt class="mb-4">
 					<h3 class="text-xl font-semibold">
-						{item.title}
+						{@html item.title}
 					</h3>
 				</dt>
 				<dd class="mb-16">
 					<p>
-						{item.description}
+						{@html item.description}
 					</p>
 				</dd>
 			{/each}

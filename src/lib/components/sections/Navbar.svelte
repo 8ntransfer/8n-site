@@ -73,15 +73,13 @@
 		</ul>
 	</div>
 
-	{#if (!isOnHeader || currentLink !== '/') && currentLink !== '/contact'}
-		<Button
-			class="hidden md:flex"
-			text="Nous contacter"
-			color="primary"
-			to="/contact"
-			selected={currentLink === '/'}><Headphones slot="icon" /></Button
-		>
-	{/if}
+	<Button
+		class="hidden md:flex"
+		text="+33 6 20 69 72 13"
+		color="primary"
+		to="tel:+33620697213"
+		selected={currentLink === '/'}><Headphones slot="icon" /></Button
+	>
 
 	<!-- create a hamburger menu -->
 	<div class="md:hidden">

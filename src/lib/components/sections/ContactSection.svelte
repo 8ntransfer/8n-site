@@ -87,10 +87,12 @@
 			</div>
 		</div>
 		<div class="pt-8 flex flex-wrap mb-8 -mx-4">
-			<!-- <div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
+			<div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
 				<a
-					href="mailto:s.cavailles81@gmail.com"
-					class="h-full block py-12 text-center transition-all rounded-xl dark:bg-gray-800 hover:bg-gray-100"
+					href="https://maps.app.goo.gl/penuFWacKG7Mc9ny9"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="h-full block py-12 text-center transition-all rounded-lg shadow-md hover:shadow-xl dark:bg-gray-800"
 				>
 					<div
 						class="inline-flex items-center justify-center w-12 h-12 mb-6 text-gray-100 bg-blue-500 rounded-full dark:bg-blue-500"
@@ -109,17 +111,18 @@
 						</svg>
 					</div>
 					<h2 class="mb-4 text-xl font-bold leading-9 text-gray-700 md:text-2xl dark:text-gray-400">
-						Email
+						Adresse postale
 					</h2>
 					<span class="text-base font-medium text-gray-500 md:text-lg dark:text-gray-400"
-						>s.cavailles81@gmail.com</span
-					>
+						>SASU 8N Expertise Bâtiment <br />Burotel Espace Entreprise <br />6 rue Maurice Hurel
+						<br />31500 Toulouse
+					</span>
 				</a>
 			</div>
 			<div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
 				<a
-					href="tel:+336206972"
-					class="h-full block py-12 text-center transition-all rounded-xl dark:bg-gray-800 hover:bg-gray-100"
+					href="tel:+33620697213"
+					class="h-full block py-12 text-center transition-all rounded-lg shadow-md hover:shadow-xl dark:bg-gray-800"
 				>
 					<div
 						class="inline-flex items-center justify-center w-12 h-12 mb-6 text-gray-100 bg-blue-500 rounded-full dark:bg-blue-500"
@@ -141,11 +144,11 @@
 						Téléphone
 					</h2>
 					<span class="text-base font-medium text-gray-500 md:text-lg dark:text-gray-400"
-						>+33 6 20 69 72</span
+						>+33 6 20 69 72 13</span
 					>
 				</a>
-			</div> -->
-			<div class="w-full px-4 mb-4">
+			</div>
+			<div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
 				<div
 					target="_blank"
 					class="h-full block py-12 text-center transition-all rounded-lg shadow-md hover:shadow-xl dark:bg-gray-800"

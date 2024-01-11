@@ -16,7 +16,7 @@
 			class="absolute top-[50%] left-0 translate-y-[-50%] w-full flex flex-col gap-4 items-start pl-4 pr-4 md:pl-10"
 		>
 			<a
-				href="https://maps.app.goo.gl/hYM3s8VpujVuogpK7"
+				href="/contact"
 				target="_blank"
 				class="hidden md:inline-flex justify-between items-center py-1 px-1 pe-4 mb-0 text-sm text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
 			>
@@ -47,9 +47,10 @@
 			<h2
 				class="mt-3 text-lg text-center self-center md:self-start md:text-left text-white sm:mt-5 sm:max-w-xl md:mt-5 md:text-xl lg:mx-0"
 			>
-				8N expertise bâtiment vous accompagne dans la gestion des sinistres, malfaçons, litiges avec
-				entreprises, et conseils relatifs à l'état structurel ou pathologies du bâtiment. La rigueur
-				et l'indépendance sont le mettre mots de la conduite de nos mission.
+				<span class="font-black text-blue-100">8N Expertise Bâtiment</span> vous accompagne dans la gestion
+				des sinistres, malfaçons, litiges avec entreprises, et conseils relatifs à l'état structurel
+				ou pathologies du bâtiment. La rigueur et l'indépendance sont le mettre mots de la conduite de
+				nos mission.
 			</h2>
 			<div
 				class="flex w-full mt-5 self-center items-center justify-self-center justify-center md:justify-start"

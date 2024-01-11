@@ -67,47 +67,50 @@
 
 	const faqItems: ListItem[] = [
 		{
-			title: 'Quand devrais-je faire appel à un expert en bâtiment ?',
+			title: 'Quand devrais-je faire appel à un expert en bâtiment&nbsp;?',
 			description:
 				"Vous devriez consulter un expert en bâtiment en cas de malfaçons, fissures, problèmes d'humidité, dégâts des eaux, ou tout autre problème structurel dans votre propriété."
 		},
 		{
-			title: "Qu'est-ce qu'une expertise en bâtiment apporte de plus qu'une simple inspection ?",
+			title:
+				"Qu'est-ce qu'une expertise en bâtiment apporte de plus qu'une simple inspection&nbsp;?",
 			description:
 				"Une expertise en bâtiment va au-delà d'une simple inspection en fournissant une analyse approfondie des problèmes, des recommandations de réparation, neutre et désintéressées et un rapport d'expertise juridiquement opposable si nécessaire."
 		},
 		{
-			title: "Quels sont les services proposés pour l'achat d'une propriété ?",
+			title: "Quels sont les services proposés pour l'achat d'une propriété&nbsp;?",
 			description:
 				"Nous offrons un audit technique avant l'achat, identifiant les éventuels problèmes structurels et fournissant des conseils sur les réparations nécessaires. Cela vous permet de prendre une décision éclairée lors de l'achat d'un bien immobilier."
 		},
 		{
-			title: 'Que faire en cas de sinistre dans ma propriété ?',
+			title: 'Que faire en cas de sinistre dans ma propriété&nbsp;?',
 			description:
 				"Contactez-nous dès que possible. Nous intervenons en tant qu'expert d'assuré, évaluant les dommages, défendant vos droits auprès de l'assurance, et vous guidant tout au long du processus d'indemnisation."
 		},
 		{
-			title: 'Quelle est la différence entre une expertise amiable et une expertise judiciaire ?',
+			title:
+				'Quelle est la différence entre une expertise amiable et une expertise judiciaire&nbsp;?',
 			description:
 				"Une expertise amiable résout des litiges à la demande d'une partie, recherchant une solution amiable. L'expertise judiciaire intervient après épuisement des recours amiables, ordonnée par le juge, pour éclairer sa décision. Une expertise amiable peut dans certains cas permettre d'aller directement au fond, sans le recourt à une expertise judiciaire."
 		},
 		{
-			title: "Comment puis-je bénéficier de vos services d'assistance à la réception de travaux ?",
+			title:
+				"Comment puis-je bénéficier de vos services d'assistance à la réception de travaux&nbsp;?",
 			description:
 				"Si vous avez un Contrat de Construction de Maison Individuelle (CMI) ou une Vente en l'État Futur d'Achèvement (VEFA), nous pouvons vous assister lors de la réception des travaux pour vous assurer que tout est conforme aux normes et aux spécifications."
 		},
 		{
-			title: "Quel est le coût d'une expertise en bâtiment ?",
+			title: "Quel est le coût d'une expertise en bâtiment&nbsp;?",
 			description:
 				"Le coût peut varier en fonction de la nature et de l'étendue de l'expertise requise. Contactez-nous pour discuter de votre cas spécifique et obtenir un devis personnalisé."
 		},
 		{
-			title: 'Pouvez-vous intervenir en urgence en cas de dégâts des eaux graves ?',
+			title: 'Pouvez-vous intervenir en urgence en cas de dégâts des eaux graves&nbsp;?',
 			description:
 				'Oui, nous pouvons intervenir en urgence pour évaluer les dégâts des eaux, fournir des recommandations immédiates, et vous aider dans les démarches avec votre assurance.'
 		},
 		{
-			title: "Quels sont les avantages d'un rapport d'expertise ?",
+			title: "Quels sont les avantages d'un rapport d'expertise&nbsp;?",
 			description:
 				"Un rapport d'expertise amiable est juridiquement opposable. Il décrit un dommage, établit causes et responsabilité. Il renforce votre position pour défendre vos droits à la réparation ou l'indemnisation, lors de négociations ou de procédures judiciaires si nécessaire. "
 		}
@@ -225,7 +228,7 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 		listItems={aboutUsItems}
 		bodyText={aboutUsDescription}
 		btnText="En savoir plus"
-		btnLink="/qui-sommes-nous"
+		btnLink="/prestations/expertises/avec-rapport"
 	/>
 </section>
 
