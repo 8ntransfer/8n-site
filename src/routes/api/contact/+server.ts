@@ -7,10 +7,8 @@ import { writeFileSync } from 'fs';
 export async function POST({ request }) {
 	// const emailContent = await request.json();
 	const formData = await request.formData();
-	console.log('server');
 
 	// console.log(formData);
-	console.log(formData.get('attachments'));
 
 	// console.log(emailContent);
 

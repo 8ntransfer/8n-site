@@ -41,8 +41,6 @@
 	let currentLinkId: number = 1;
 
 	const setCurrentLink = (link: Link) => {
-		console.log('mouse enter', link);
-
 		currentLinkId = link.id;
 	};
 

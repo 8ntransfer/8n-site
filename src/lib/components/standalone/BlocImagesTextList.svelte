@@ -12,8 +12,6 @@
 	let hasIntersected = false;
 
 	const isIntersecting = () => {
-		console.log('isIntersecting');
-
 		hasIntersected = true;
 	};
 </script>
@@ -125,6 +123,7 @@
 		</div>
 	</div>
 </div>
+<IntersectionObserver on:intersecting={isIntersecting} top={0} />
 
 <style>
 </style>

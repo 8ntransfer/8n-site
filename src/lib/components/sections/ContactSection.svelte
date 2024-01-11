@@ -2,6 +2,9 @@
 	import { enhance } from '$app/forms';
 	import Map from '~icons/mdi/map';
 	import { success, warning } from '$lib/utils/toast';
+	import { twMerge } from 'tailwind-merge';
+	import IntersectionObserver from '../standalone/IntersectionObserver.svelte';
+	let hasIntersected = false;
 
 	let isOptionSelected = false;
 	let buttonDisabled = true;
@@ -11,7 +14,6 @@
 	let filesImages: string[] = [];
 
 	$: if (files.length > 0) {
-		console.log(files);
 		filesImages = [];
 		for (let i = 0; i < files.length; i++) {
 			filesImages.push(URL.createObjectURL(files[i]));
@@ -32,8 +34,6 @@
 		const res = await response.json();
 
 		form.srcElement.reset();
-
-		console.log(res);
 	}
 
 	const enhanceForm = ({ formElement, formData, action, cancel }) => {
@@ -71,11 +71,22 @@
 
 		buttonDisabled = !isFormValid;
 	}
+
+	const isIntersecting = () => {
+		hasIntersected = true;
+	};
 </script>
+
+<IntersectionObserver on:intersecting={isIntersecting} top={-200} />
 
 <section class="py-16 dark:bg-gray-900">
 	<div class="justify-center flex-1 max-w-5xl px-4 py-4 mx-auto lg:py-10 md:px-7">
-		<div class="max-w-xl mx-auto">
+		<div
+			class={twMerge(
+				'max-w-xl mx-auto transition-all duration-300 ease-[cubic-bezier(0.16, 1, 0.3, 1)] opacity-0 translate-y-[2%]',
+				hasIntersected && 'opacity-100 translate-y-0'
+			)}
+		>
 			<div class="text-center">
 				<div class="relative flex flex-col items-center">
 					<h2 class="text-base font-semibold tracking-wide text-blue-600 uppercase">Contact</h2>
@@ -87,7 +98,12 @@
 			</div>
 		</div>
 		<div class="pt-8 flex flex-wrap mb-8 -mx-4">
-			<div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
+			<div
+				class={twMerge(
+					'w-full px-4 mb-4 lg:w-1/3 lg:mb-0 transition-all duration-300 ease-[cubic-bezier(0.16, 1, 0.3, 1)] opacity-0 translate-y-[2%] delay-300',
+					hasIntersected && 'opacity-100 translate-y-0'
+				)}
+			>
 				<a
 					href="https://maps.app.goo.gl/penuFWacKG7Mc9ny9"
 					target="_blank"
@@ -119,7 +135,12 @@
 					</span>
 				</a>
 			</div>
-			<div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
+			<div
+				class={twMerge(
+					'w-full px-4 mb-4 lg:w-1/3 lg:mb-0 transition-all duration-300 ease-[cubic-bezier(0.16, 1, 0.3, 1)] opacity-0 translate-y-[2%] delay-200',
+					hasIntersected && 'opacity-100 translate-y-0'
+				)}
+			>
 				<a
 					href="tel:+33620697213"
 					class="h-full block py-12 text-center transition-all rounded-lg shadow-md hover:shadow-xl dark:bg-gray-800"
@@ -148,7 +169,12 @@
 					>
 				</a>
 			</div>
-			<div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
+			<div
+				class={twMerge(
+					'w-full px-4 mb-4 lg:w-1/3 lg:mb-0 transition-all duration-300 ease-[cubic-bezier(0.16, 1, 0.3, 1)] opacity-0 translate-y-[2%] delay-[400ms]',
+					hasIntersected && 'opacity-100 translate-y-0'
+				)}
+			>
 				<div
 					target="_blank"
 					class="h-full block py-12 text-center transition-all rounded-lg shadow-md hover:shadow-xl dark:bg-gray-800"
@@ -244,7 +270,10 @@
 			</div> -->
 		</div>
 		<div
-			class="px-8 py-8 bg-white border rounded-md shadow-sm dark:border-gray-800 dark:bg-gray-800"
+			class={twMerge(
+				'px-8 py-8 bg-white border rounded-md shadow-sm dark:border-gray-800 dark:bg-gray-800 transition-all duration-300 ease-[cubic-bezier(0.16, 1, 0.3, 1)] opacity-0 translate-y-[2%] delay-[500ms]',
+				hasIntersected && 'opacity-100 translate-y-0'
+			)}
 		>
 			<form
 				on:input={handleFormInput}
@@ -380,6 +409,7 @@
 		</div>
 	</div>
 </section>
+<IntersectionObserver on:intersecting={isIntersecting} top={0} />
 
 <style>
 </style>

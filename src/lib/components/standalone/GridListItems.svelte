@@ -1,5 +1,7 @@
 <script lang="ts">
 	import type { Category, ListItem } from '$lib/types/ListItem';
+	import { twMerge } from 'tailwind-merge';
+	import IntersectionObserver from './IntersectionObserver.svelte';
 
 	export let title = 'Title';
 	export let subTitle = 'Sub title';
@@ -7,19 +9,26 @@
 	export let categories: Category[] = [];
 
 	let selectedCategory = 1;
+	let hasIntersected = false;
 
 	$: filteredListItems = listItems.filter((item) => item.category === selectedCategory);
-
-	const handleCategorySelect = (e) => {
-		console.log(e);
-	};
 
 	const handleCategoryClick = (categoryId: number) => {
 		selectedCategory = categoryId;
 	};
+
+	const isIntersecting = () => {
+		hasIntersected = true;
+	};
 </script>
 
-<div class="container p-6 px-6 mx-auto bg-white dark:bg-gray-800">
+<IntersectionObserver on:intersecting={isIntersecting} top={-200} />
+<div
+	class={twMerge(
+		'container p-6 px-6 mx-auto bg-white dark:bg-gray-800 transition-all duration-300 ease-[cubic-bezier(0.16, 1, 0.3, 1)] opacity-0 translate-y-[2%]',
+		hasIntersected && 'opacity-100 translate-y-0'
+	)}
+>
 	<div class="mb-16 text-center">
 		<h2 class="text-base font-semibold tracking-wide text-blue-600 uppercase">{subTitle}</h2>
 		<p
@@ -69,6 +78,7 @@
 		{/each}
 	</div>
 </div>
+<IntersectionObserver on:intersecting={isIntersecting} top={0} />
 
 <style>
 </style>

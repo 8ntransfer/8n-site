@@ -74,6 +74,7 @@
 			</div>
 		</div>
 	</div>
+	<IntersectionObserver on:intersecting={isIntersecting} top={0} />
 </section>
 
 <style>
