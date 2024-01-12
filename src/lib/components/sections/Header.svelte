@@ -65,7 +65,7 @@
 				/>
 			</div>
 			<div class="hidden mt-4 sm:flex xs:bg-yellow-200 w-fit self-center md:self-start text-white">
-				Une question spécifique&nbsp;? <a href="#faq" class="underline cursor-pointer">
+				Une question spécifique&nbsp;? <a href="#faq" class="underline cursor-pointer ml-1">
 					Regardez notre FAQ
 				</a>
 			</div>
