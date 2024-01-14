@@ -33,6 +33,11 @@ export const upload = async ({ request }) => {
 
 	const tempFolder = path.join(process.cwd(), 'static/temp');
 
+	// create tempFolder if it doesn't exist
+	if (!fs.existsSync(tempFolder)) {
+		fs.mkdirSync(tempFolder);
+	}
+
 	if (attachments.length !== 0 && attachments[0].size !== 0) {
 		for (const attachment of attachments) {
 			writeFileSync(
