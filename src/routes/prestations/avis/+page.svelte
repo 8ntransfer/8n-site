@@ -19,7 +19,7 @@
 	<h3>Points Clés de la Mission</h3>
 	<ul>
 		<li>
-			<span class="font-bold text-gray-900">Analyse minutieuse :</span> Nous scrutons le gros œuvre,
+			<span class="font-bold text-gray-900">Analyse minutieuse :</span> Nous inspectons le gros œuvre,
 			le second œuvre, l'état de la façade, et la structure de la charpente et de la couverture.
 		</li>
 		<li>

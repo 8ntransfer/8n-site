@@ -47,19 +47,13 @@
 		votre maison, prenant en compte chaque détail.
 	</p>
 
-	<h4>6. Coût des Frais Annexes</h4>
-	<p>
-		Les frais annexes à cette démarche sont évalués avec transparence, vous offrant une vision
-		complète des coûts potentiels liés à la remise en état.
-	</p>
-
-	<h4>7. Assistance Technique dans la Négociation</h4>
+	<h4>6. Assistance Technique dans la Négociation</h4>
 	<p>
 		Nous vous assistons techniquement lors des négociations avec votre compagnie d'assurance,
 		veillant à ce que chaque aspect soit correctement pris en compte.
 	</p>
 
-	<h4>8. Suivi Intégral du Dossier</h4>
+	<h4>7. Suivi Intégral du Dossier</h4>
 	<p>
 		Notre mission ne se termine pas avec la négociation. Nous suivons votre dossier jusqu'à
 		l'indemnisation totale, garantissant que chaque étape soit réalisée avec précision.

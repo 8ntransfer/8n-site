@@ -56,7 +56,7 @@
 		l'indemnisation totale, veillant à ce que chaque aspect soit correctement pris en compte.
 	</p>
 
-	<h3>Pourquoi Choisir Notre Mission d'assistance après sinistre?</h3>
+	<h3>Pourquoi choisir notre mission d'assistance après sinistre?</h3>
 
 	<ul>
 		<li>
@@ -72,12 +72,6 @@
 			engageons à résoudre votre dossier.
 		</li>
 	</ul>
-
-	<p>
-		Optez pour la mission d'assistance après sinistre et assurez-vous que chaque dommage est
-		correctement évalué et indemnisé. Notre équipe d'experts est à vos côtés pour vous guider à
-		travers ce processus parfois complexe.
-	</p>
 </article>
 
 <style lang="postcss">

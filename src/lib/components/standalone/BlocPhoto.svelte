@@ -85,7 +85,7 @@
 									Avis avant achat ou vente d'un bien immobilier
 								</dt>
 								<dd class="inline">
-									Avis sur un désordre identifiés • Audit général des partie visibles de l'enveloppe
+									Avis sur un désordre identifié • Audit général des parties visibles de l'enveloppe
 									extérieure et du second œuvre
 								</dd>
 							</div>

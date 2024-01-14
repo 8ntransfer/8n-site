@@ -49,8 +49,8 @@
 			>
 				<span class="font-black text-blue-100">8N Expertise Bâtiment</span> vous accompagne dans la gestion
 				des sinistres, malfaçons, litiges avec entreprises, et conseils relatifs à l'état structurel
-				ou pathologies du bâtiment. La rigueur et l'indépendance sont le mettre mots de la conduite de
-				nos mission.
+				ou pathologies du bâtiment. La rigueur et l'indépendance sont le maîtres-mots de la conduite
+				de nos mission.
 			</h2>
 			<div
 				class="flex w-full mt-5 self-center items-center justify-self-center justify-center md:justify-start"

@@ -24,10 +24,7 @@
 		nature et la cause du problème, jetant les bases d'une résolution efficace.
 	</p>
 	<h4>Préconisations Expertes</h4>
-	<p>
-		Votre expert éditent des préconisations claires pour remédier aux désordres identifiés. Nous
-		offrons des solutions concrètes pour restaurer l'intégrité de votre bien immobilier.
-	</p>
+	<p>Votre expert édite des préconisations claires pour remédier aux désordres identifiés.</p>
 	<h4>Responsabilités Clarifiées</h4>
 	<p>
 		Si nécessaire, nous déterminons les responsabilités, que ce soit d'ordre contractuel,
@@ -48,7 +45,7 @@
 	</p>
 	<h3>Rapport d'Expertise Détaillé</h3>
 	<p>
-		Un document technique incontestable est rédigé avec soin. Notre rapport d'expertise amiable
+		Document technique détaillé et rédigé avec soin, notre rapport d'expertise amiable
 		contradictoire comprend :
 	</p>
 	<ul>
@@ -66,8 +63,8 @@
 	</p>
 	<br />
 	<p>
-		Choisissez la Mission d'expertise avec rapport pour protéger la valeur de votre propriété. Notre
-		expert est là pour vous guider à chaque étape, assurant une résolution efficace de vos litiges.
+		Choisissez la Mission d'expertise avec rapport quand cela s'avère nécéssaire. Notre expert est
+		là pour vous guider à chaque étape, assurant une résolution efficace de votre litige.
 	</p>
 </article>
 

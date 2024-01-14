@@ -47,7 +47,7 @@
 		{
 			title: 'Expertise et Expérience',
 			description:
-				"Après 29 ans d'expérience dans le bâtiment, notre expert à été formé et certifié par l'OFIB en expertise bâtiment amiable et juridique."
+				"Après 29 ans d'expérience dans le bâtiment, notre expert a été formé en expertise bâtiment amiable et juridique."
 		},
 		{
 			title: 'Engagements',
@@ -105,11 +105,6 @@
 				"Le coût peut varier en fonction de la nature et de l'étendue de l'expertise requise. Contactez-nous pour discuter de votre cas spécifique et obtenir un devis personnalisé."
 		},
 		{
-			title: 'Pouvez-vous intervenir en urgence en cas de dégâts des eaux graves&nbsp;?',
-			description:
-				'Oui, nous pouvons intervenir en urgence pour évaluer les dégâts des eaux, fournir des recommandations immédiates, et vous aider dans les démarches avec votre assurance.'
-		},
-		{
 			title: "Quels sont les avantages d'un rapport d'expertise&nbsp;?",
 			description:
 				"Un rapport d'expertise amiable est juridiquement opposable. Il décrit un dommage, établit causes et responsabilité. Il renforce votre position pour défendre vos droits à la réparation ou l'indemnisation, lors de négociations ou de procédures judiciaires si nécessaire. "
@@ -117,7 +112,7 @@
 	];
 
 	const aboutUsDescription = `
-L'expertise est un outil essentiel pour éclairer les décisions dans des situations complexes. Fort d'une expérience de plus de 29 ans et certifié par l'OFIB, notre expert principal chez 8N Expertise Bâtiment offre un regard objectif à chaque étape de la mission que vous lui confierai, que ce soit pour un achat, une location, la construction d'une maison ou des travaux. En respectant les principes du contradictoire, l'expert produit un rapport détaillé, juridiquement opposable. Notre engagement se traduit par une disponibilité immédiate et un traitement rapide de votre dossier. Chez nous, votre satisfaction est notre priorité.`;
+L'expertise est un outil essentiel pour éclairer les décisions dans des situations complexes. Fort d'une expérience de plus de 29 ans dans le bâtiment et certifié par l'OFIB, notre expert vous offre un regard objectif à chaque étape de la mission que vous lui confierez.`;
 
 	const categoriesOnIntervientSur: Category[] = [
 		{ id: 1, label: 'Désordres' },

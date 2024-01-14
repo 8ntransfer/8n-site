@@ -130,11 +130,6 @@
 				</svg>
 			</a>
 		</div> -->
-		<div
-			class="text-center pt-10 sm:pt-12 font-light flex flex-col sm:flex-row items-center justify-center"
-		>
-			<span>8N Expertise en Bâtiment © {currentYear}.</span>
-		</div>
 	</div>
 </footer>
 
