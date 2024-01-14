@@ -31,7 +31,7 @@ export const upload = async ({ request }) => {
 	const message: string = data.get('message');
 	const messageType: string = data.get('messageType');
 
-	const tempFolder = path.join(process.cwd(), 'static/temp');
+	const tempFolder = path.join(process.cwd(), '/app/static/temp');
 
 	// create tempFolder if it doesn't exist
 	if (!fs.existsSync(tempFolder)) {
