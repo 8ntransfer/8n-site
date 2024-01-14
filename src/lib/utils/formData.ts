@@ -31,22 +31,6 @@ export const upload = async ({ request }) => {
 	const message: string = data.get('message');
 	const messageType: string = data.get('messageType');
 
-	const tempFolder = path.join(process.cwd(), '/app/static/temp');
-
-	// create tempFolder if it doesn't exist
-	if (!fs.existsSync(tempFolder)) {
-		fs.mkdirSync(tempFolder);
-	}
-
-	if (attachments.length !== 0 && attachments[0].size !== 0) {
-		for (const attachment of attachments) {
-			writeFileSync(
-				`${tempFolder}/${attachment.name}`,
-				Buffer.from(await attachment.arrayBuffer())
-			);
-		}
-	}
-
 	const transporter = nodemailer.createTransport({
 		service: 'gmail',
 		port: 465,
@@ -79,30 +63,21 @@ export const upload = async ({ request }) => {
 	};
 
 	if (attachments.length !== 0 && attachments[0].size !== 0) {
+		const attachmentsToSend = [];
+		for (const attachment of attachments) {
+			attachmentsToSend.push({
+				filename: attachment.name,
+				content: Buffer.from(await attachment.arrayBuffer()),
+				encoding: 'base64'
+			});
+		}
 		mailOptionsForCorentin = {
 			...mailOptionsForCorentin,
-			attachments: attachments.map((attachment: File) => ({
-				filename: attachment.name,
-				path: `${tempFolder}/${attachment.name}`
-			}))
+			attachments: attachmentsToSend
 		};
 	}
 
 	const info = await transporter.sendMail(mailOptionsForCorentin);
-
-	if (attachments.length !== 0 && attachments[0].size !== 0) {
-		// delete all files in /${tempFolder}
-		const directory = `${tempFolder}`;
-		fs.readdir(directory, (err, files) => {
-			if (err) throw err;
-
-			for (const file of files) {
-				fs.unlink(`${directory}/${file}`, (err) => {
-					if (err) throw err;
-				});
-			}
-		});
-	}
 
 	return {
 		success: true,
