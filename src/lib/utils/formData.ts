@@ -1,5 +1,6 @@
 import fs, { writeFileSync } from 'fs';
 import nodemailer from 'nodemailer';
+import path from 'path';
 
 const messageTypes = {
 	'probleme-chantier': 'Problème de chantiers',
@@ -9,6 +10,15 @@ const messageTypes = {
 	judiciaire: "Assistance d'expertise judiciaire",
 	'trouble-voisinage': 'Trouble anormal de voisinage',
 	autres: 'Autres questions'
+};
+
+type MailOptions = {
+	from: string;
+	to: string;
+	subject: string;
+	text: string;
+	html: string;
+	attachments?: any[];
 };
 
 export const upload = async ({ request }) => {
@@ -21,8 +31,15 @@ export const upload = async ({ request }) => {
 	const message: string = data.get('message');
 	const messageType: string = data.get('messageType');
 
-	for (const attachment of attachments) {
-		writeFileSync(`static/temp/${attachment.name}`, Buffer.from(await attachment.arrayBuffer()));
+	const tempFolder = path.join(process.cwd(), 'static/temp');
+
+	if (attachments.length !== 0 && attachments[0].size !== 0) {
+		for (const attachment of attachments) {
+			writeFileSync(
+				`${tempFolder}/${attachment.name}`,
+				Buffer.from(await attachment.arrayBuffer())
+			);
+		}
 	}
 
 	const transporter = nodemailer.createTransport({
@@ -36,7 +53,7 @@ export const upload = async ({ request }) => {
 		secure: true
 	});
 
-	const mailOptionsForCorentin = {
+	let mailOptionsForCorentin: MailOptions = {
 		from: 'hello@example.com',
 		to: 'corentin.gobbo@gmail.com',
 		subject: 'Nouveau message du site 8N',
@@ -53,26 +70,34 @@ export const upload = async ({ request }) => {
 			</ul>
 
 			<hr />
-			<p>Message: <em>${message}</em></p>`,
-		attachments: attachments.map((attachment: File) => ({
-			filename: attachment.name,
-			path: `static/temp/${attachment.name}`
-		}))
+			<p>Message: <em>${message}</em></p>`
 	};
+
+	if (attachments.length !== 0 && attachments[0].size !== 0) {
+		mailOptionsForCorentin = {
+			...mailOptionsForCorentin,
+			attachments: attachments.map((attachment: File) => ({
+				filename: attachment.name,
+				path: `${tempFolder}/${attachment.name}`
+			}))
+		};
+	}
 
 	const info = await transporter.sendMail(mailOptionsForCorentin);
 
-	// delete all files in /static/temp
-	const directory = 'static/temp';
-	fs.readdir(directory, (err, files) => {
-		if (err) throw err;
+	if (attachments.length !== 0 && attachments[0].size !== 0) {
+		// delete all files in /${tempFolder}
+		const directory = `${tempFolder}`;
+		fs.readdir(directory, (err, files) => {
+			if (err) throw err;
 
-		for (const file of files) {
-			fs.unlink(`${directory}/${file}`, (err) => {
-				if (err) throw err;
-			});
-		}
-	});
+			for (const file of files) {
+				fs.unlink(`${directory}/${file}`, (err) => {
+					if (err) throw err;
+				});
+			}
+		});
+	}
 
 	return {
 		success: true,
