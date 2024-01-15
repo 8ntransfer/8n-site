@@ -15,7 +15,7 @@
 
 <meta
 	name="description"
-	content="Expertise du bâtiment - Solutions complètes pour vos problèmes de construction."
+	content="expertise bâtiment - Solutions complètes pour vos problèmes de construction."
 />
 <meta
 	name="keywords"
@@ -24,13 +24,13 @@
 <meta name="author" content="Corentin Gobbo" />
 <meta name="robots" content="index, follow" />
 <meta name="language" content="French" />
-<meta name="og:title" content="8N - Expertise du bâtiment" />
+<meta name="og:title" content="8N - expertise bâtiment" />
 <meta name="og:description" content="Solutions complètes pour vos problèmes de construction." />
 <meta name="og:image" content="/hero-header.png" />
 <meta name="og:url" content="URL de votre site" />
 <meta name="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="8N - Expertise du bâtiment" />
+<meta name="twitter:title" content="8N - expertise bâtiment" />
 <meta
 	name="twitter:description"
 	content="Solutions complètes pour vos problèmes de construction."

@@ -47,7 +47,7 @@
 		{
 			title: 'Expertise et Expérience',
 			description:
-				"Après 29 ans d'expérience dans le bâtiment, notre expert a été formé en expertise bâtiment amiable et juridique."
+				"Après 29 ans d'expérience dans le bâtiment, notre expert a été formé et certifié par l'OFIB (R) en expertise bâtiment amiable et complément judiciaire."
 		},
 		{
 			title: 'Engagements',
@@ -56,7 +56,7 @@
 		},
 		{
 			title: 'Certifications',
-			description: "Certifié expert bâtiment option judiciaire par l'OFIB."
+			description: "Certifié expert bâtiment option judiciaire par l'OFIB (R)."
 		},
 		{
 			title: 'Intégrité et Transparence',
@@ -112,7 +112,7 @@
 	];
 
 	const aboutUsDescription = `
-L'expertise est un outil essentiel pour éclairer les décisions dans des situations complexes. Fort d'une expérience de plus de 29 ans dans le bâtiment et certifié par l'OFIB, notre expert vous offre un regard objectif à chaque étape de la mission que vous lui confierez.`;
+L'expertise est un outil essentiel pour éclairer les décisions dans des situations complexes. Fort d'une expérience de plus de 29 ans dans le bâtiment et certifié par l'OFIB (R), notre expert vous offre un regard objectif à chaque étape de la mission que vous lui confierez.`;
 
 	const categoriesOnIntervientSur: Category[] = [
 		{ id: 1, label: 'Désordres' },
@@ -209,7 +209,7 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 
 <svelte:head>
 	<Head
-		title="8N - Expertise du bâtiment"
+		title="8N - expertise bâtiment"
 		description="Solutions complètes pour vos problèmes de construction."
 	/>
 </svelte:head>

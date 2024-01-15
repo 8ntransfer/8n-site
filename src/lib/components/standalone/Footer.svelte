@@ -16,7 +16,7 @@
 				<div class="pr-10">
 					<h2 class=" text-gray-400 font-medium text-md uppercase mb-4">A propos</h2>
 					<p>
-						Notre entreprise dédiée à l'expertise du bâtiment allie savoir-faire technique et
+						Notre entreprise dédiée à l'expertise bâtiment allie savoir-faire technique et
 						engagement à résoudre vos problèmes, assurant ainsi la tranquillité d'esprit pour nos
 						clients.
 					</p>
