@@ -342,7 +342,7 @@
 
 				<!-- <input name="attachments" type="file" multiple accept="image/*" /> -->
 
-				<div class="flex items-center justify-center w-full mb-4">
+				<!-- <div class="flex items-center justify-center w-full mb-4">
 					<label
 						for="attachments"
 						class="flex w-full h-auto border-gray-300 border rounded cursor-pointer text-gray-700 bg-gray-50 hover:bg-gray-100"
@@ -397,7 +397,7 @@
 							bind:files
 						/>
 					</label>
-				</div>
+				</div> -->
 
 				<button
 					disabled={buttonDisabled}
