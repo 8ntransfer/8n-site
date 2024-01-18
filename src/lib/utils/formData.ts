@@ -42,9 +42,22 @@ export const upload = async ({ request }) => {
 		secure: true
 	});
 
+	await new Promise((resolve, reject) => {
+		// verify connection configuration
+		transporter.verify(function (error, success) {
+			if (error) {
+				console.log(error);
+				reject(error);
+			} else {
+				console.log('Server is ready to take our messages');
+				resolve(success);
+			}
+		});
+	});
+
 	let mailOptionsForCorentin: MailOptions = {
 		from: 'hello@example.com',
-		to: '8n.expertisebatiment@gmail.com, s.cavailles81@gmail.com, corentin.gobbo@gmail.com',
+		to: 'corentin.gobbo@gmail.com',
 		subject: 'Nouveau message du site 8N',
 		text: `
 			Type de contact: ${messageTypes[messageType]}
@@ -77,10 +90,20 @@ export const upload = async ({ request }) => {
 		};
 	}
 
-	const info = await transporter.sendMail(mailOptionsForCorentin);
+	await new Promise((resolve, reject) => {
+		// send mail
+		transporter.sendMail(mailOptionsForCorentin, (err, info) => {
+			if (err) {
+				console.error(err);
+				reject(err);
+			} else {
+				console.log(info);
+				resolve(info);
+			}
+		});
+	});
 
 	return {
-		success: true,
-		info
+		success: true
 	};
 };
