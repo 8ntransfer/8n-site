@@ -1,109 +1,54 @@
-import fs, { writeFileSync } from 'fs';
-import nodemailer from 'nodemailer';
-import path from 'path';
-
-const messageTypes = {
-	'probleme-chantier': 'Problème de chantiers',
-	sinistre: "Expertise d'assuré lors de sinistre",
-	'reception-travaux': 'Assistance à réception de travaux',
-	'conseils-techniques': 'Assistance et conseils techniques',
-	judiciaire: "Assistance d'expertise judiciaire",
-	'trouble-voisinage': 'Trouble anormal de voisinage',
-	autres: 'Autres questions'
-};
-
-type MailOptions = {
-	from: string;
-	to: string;
-	subject: string;
-	text: string;
-	html: string;
-	attachments?: any[];
-};
-
 export const upload = async ({ request }) => {
-	const data = await request.formData();
-	const attachments = data.getAll('attachments');
+	try {
+		const myHeaders = new Headers();
+		myHeaders.append(
+			'Authorization',
+			'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ4YTYzYmM0NzY3Zjg1NTBhNTMyZGM2MzBjZjdlYjQ5ZmYzOTdlN2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAwNDMyMjUzNjAzODM1MTc3MTk3IiwiZW1haWwiOiJjb3JlbnRpbi5nb2Jib0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IjhTSjd5WkV6ZW92V3FLY0g3ckEyUkEiLCJuYmYiOjE3MDU4MzIyMzUsImlhdCI6MTcwNTgzMjUzNSwiZXhwIjoxNzA1ODM2MTM1LCJqdGkiOiJjMDE2MWY4NTU5NjE1YjZlN2E5YzVjMjVjZmYzZjhhOWU2M2Q5ZTMyIn0.O6XYSNTl7EE7wYt-XSHM3G-6udS1u65ZPFilYONn_wJDpDZDIGH7FEL8krrqVWNjjsXWVTSr9GviYWzXpQWiOTawMJuafQJYpUcOmrqtFvbIZxYURpLm62r0YCjPem9j8hmiOkEXtrOLOsWGzUPDX9YtoFiiTF5HM4GDaFPszKhdTVxN2vYQbQGE97IFQi1nA5ajeeqdyc-MMq9yPDD-KhsenRHWoBRWrEx_VajGk5mGYWr1wo21Q4bowkNpnmxGx2nvFP-rk3S9umpsC6LtSTVbdeq2t_-0tK-aXgBI6m0GWfYQM7hRsuMY3shX_1qWWpJTG2N5OQTDtrpJuHABVQ'
+		);
 
-	const prenom: string = data.get('prenom');
-	const nom: string = data.get('nom');
-	const email: string = data.get('email');
-	const message: string = data.get('message');
-	const messageType: string = data.get('messageType');
+		const formData = await request.formData();
 
-	const transporter = nodemailer.createTransport({
-		service: 'gmail',
-		port: 465,
-		host: 'smtp.gmail.com',
-		auth: {
-			user: '8nmailer@gmail.com',
-			pass: 'tmrdipzztwntsfux'
-		},
-		secure: true
-	});
+		const requestOptions = {
+			method: 'POST',
+			headers: myHeaders,
+			body: formData,
+			redirect: 'follow'
+		};
 
-	await new Promise((resolve, reject) => {
-		// verify connection configuration
-		transporter.verify(function (error, success) {
-			if (error) {
-				console.log(error);
-				reject(error);
-			} else {
-				console.log('Server is ready to take our messages');
-				resolve(success);
-			}
-		});
-	});
+		const res = await fetch('https://mailer-6s7hvevdhq-uc.a.run.app', requestOptions);
 
-	let mailOptionsForCorentin: MailOptions = {
-		from: 'hello@example.com',
-		to: '8n.expertisebatiment@gmail.com, s.cavailles81@gmail.com',
-		subject: 'Nouveau message du site 8N',
-		text: `
-			Type de contact: ${messageTypes[messageType]}
-			Email: ${email}
-			Message: ${message}`,
-		html: `
-			<ul>
-			<li>Nom: <b>${nom}</b></li>
-			<li>Prénom: <b>${prenom}</b></li>
-			<li>Type de contact: <b>${messageTypes[messageType]}</b></li>
-			<li>Email: <b>${email}</b></li>
-			</ul>
+		const responseText = await res.text();
+		console.log(responseText);
 
-			<hr />
-			<p>Message: <em>${message}</em></p>`
-	};
+		// ---------------------------------------
+		// const data = await request.formData();
 
-	if (attachments.length !== 0 && attachments[0].size !== 0) {
-		const attachmentsToSend = [];
-		for (const attachment of attachments) {
-			attachmentsToSend.push({
-				filename: attachment.name,
-				content: Buffer.from(await attachment.arrayBuffer()),
-				encoding: 'base64'
-			});
-		}
-		mailOptionsForCorentin = {
-			...mailOptionsForCorentin,
-			attachments: attachmentsToSend
+		// const formData = new FormData();
+
+		// formData.append('nom', data.get('nom'));
+		// formData.append('prenom', data.get('prenom'));
+		// formData.append('email', data.get('email'));
+		// formData.append('message', data.get('message'));
+		// formData.append('messageType', data.get('messageType'));
+
+		// // send a post request to https://mailer-6s7hvevdhq-uc.a.run.app
+		// // with the form data and content type form data
+
+		// await fetch('https://mailer-6s7hvevdhq-uc.a.run.app', {
+		// 	method: 'POST',
+		// 	headers: { 'Content-Type': 'multipart/form-data', Authorization: `Bearer ${baererToken}` },
+		// 	body: formData
+		// });
+
+		return {
+			status: 200,
+			message: 'Message envoyé'
+		};
+	} catch (error) {
+		console.log(error);
+		return {
+			status: 500,
+			message: "Erreur lors de l'envoi du message"
 		};
 	}
-
-	await new Promise((resolve, reject) => {
-		// send mail
-		transporter.sendMail(mailOptionsForCorentin, (err, info) => {
-			if (err) {
-				console.error(err);
-				reject(err);
-			} else {
-				console.log(info);
-				resolve(info);
-			}
-		});
-	});
-
-	return {
-		success: true
-	};
 };
