@@ -4,6 +4,9 @@
 	import { success, warning } from '$lib/utils/toast';
 	import { twMerge } from 'tailwind-merge';
 	import IntersectionObserver from '../standalone/IntersectionObserver.svelte';
+	import Compressor from 'compressorjs';
+	import { error } from '@sveltejs/kit';
+
 	let hasIntersected = false;
 
 	let isOptionSelected = false;
@@ -12,32 +15,59 @@
 	let formSending = false;
 	let files: FileList = [];
 	let filesImages: string[] = [];
+	let compressing = false;
 
-	$: if (files.length > 0) {
+	function compressImage(e: Event) {
+		const filesFromElement = (e.target as HTMLInputElement).files;
+
+		if (!filesFromElement) return;
+
 		filesImages = [];
-		for (let i = 0; i < files.length; i++) {
-			filesImages.push(URL.createObjectURL(files[i]));
+
+		const dt = new DataTransfer();
+
+		compressing = true;
+
+		for (let i = 0; i < filesFromElement.length; i++) {
+			new Compressor(filesFromElement[i], {
+				quality: 0.6,
+				maxWidth: 1024,
+				maxHeight: 1024,
+				success(result: File | Blob) {
+					let file: File;
+					let name = (result as File).name;
+					let type = (result as File).type;
+
+					if (result instanceof Blob) {
+						file = new File([result], 'compressed_' + name, { type });
+					} else {
+						file = result as File;
+					}
+
+					dt.items.add(file);
+					filesImages = [...filesImages, URL.createObjectURL(file)];
+
+					files = dt.files;
+					if (files.length === filesFromElement.length) {
+						compressing = false;
+					}
+				},
+
+				error(err: Error) {
+					warning('Erreur lors de la compression des images');
+					console.log(err.message);
+				}
+			});
 		}
-	}
-
-	async function handleSubmit(form) {
-		const data = new URLSearchParams(new FormData(form.srcElement));
-
-		const response = await fetch('/api/contact', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'multipart/form-data'
-			},
-			body: JSON.stringify(Object.fromEntries(data))
-		});
-
-		const res = await response.json();
-
-		form.srcElement.reset();
 	}
 
 	const enhanceForm = ({ formElement, formData, action, cancel }) => {
 		const images = formData.getAll('attachments');
+		formData.delete('attachments');
+
+		Array.from(files).forEach((file) => {
+			formData.append('attachments', file);
+		});
 
 		if (images.length > 5) {
 			warning('Vous ne pouvez pas envoyer plus de 5 images');
@@ -48,6 +78,7 @@
 
 		return async () => {
 			success('Votre message a bien été envoyé !');
+			files = [];
 			formElement.reset();
 			formSending = false;
 		};
@@ -294,6 +325,7 @@
 							type="text"
 							placeholder="Prénom"
 							name="prenom"
+							value="Corentin"
 							required
 						/>
 					</div>
@@ -303,6 +335,7 @@
 							type="text"
 							placeholder="Nom"
 							name="nom"
+							value="Gobbo"
 							required
 						/>
 					</div>
@@ -312,6 +345,7 @@
 					type="email"
 					placeholder="abc@gmail.com"
 					name="email"
+					value="corentin.gobbo@gmail.com"
 					required
 				/>
 				<select
@@ -319,6 +353,7 @@
 						? 'text-gray-700'
 						: ''}"
 					name="messageType"
+					value="probleme-chantier"
 					placeholder="Sélectionnez une option"
 					on:input={handleSelect}
 					required
@@ -336,6 +371,7 @@
 					rows="4"
 					placeholder="Message..."
 					name="message"
+					value="Bonjour, je vous contacte car j'ai un problème sur un chantier"
 					required
 					class="block w-full px-4 mb-4 leading-tight text-gray-700 border rounded bg-gray-50 dark:placeholder-gray-400 py-7 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-700"
 				/>
@@ -394,16 +430,21 @@
 							type="file"
 							multiple
 							accept="image/*"
+							on:change={compressImage}
 							bind:files
 						/>
 					</label>
 				</div>
 
 				<button
-					disabled={buttonDisabled}
+					disabled={buttonDisabled || compressing || formSending}
 					class="w-full py-4 text-sm font-bold leading-normal text-white transition-all duration-300 bg-blue-600 rounded-md dark:bg-blue-500 dark:hover:bg-blue-600 hover:bg-blue-700 disabled:opacity-50"
 				>
-					{formSending ? 'Envoi en cours...' : 'Envoyer'}
+					{compressing
+						? 'Compression des images...'
+						: formSending
+						? 'Envoi en cours...'
+						: 'Envoyer'}
 				</button>
 			</form>
 		</div>
