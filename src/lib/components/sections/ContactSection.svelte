@@ -5,7 +5,6 @@
 	import { twMerge } from 'tailwind-merge';
 	import IntersectionObserver from '../standalone/IntersectionObserver.svelte';
 	import Compressor from 'compressorjs';
-	import { error } from '@sveltejs/kit';
 
 	let hasIntersected = false;
 
@@ -325,7 +324,6 @@
 							type="text"
 							placeholder="Prénom"
 							name="prenom"
-							value="Corentin"
 							required
 						/>
 					</div>
@@ -335,7 +333,6 @@
 							type="text"
 							placeholder="Nom"
 							name="nom"
-							value="Gobbo"
 							required
 						/>
 					</div>
@@ -345,7 +342,6 @@
 					type="email"
 					placeholder="abc@gmail.com"
 					name="email"
-					value="corentin.gobbo@gmail.com"
 					required
 				/>
 				<select
@@ -353,7 +349,6 @@
 						? 'text-gray-700'
 						: ''}"
 					name="messageType"
-					value="probleme-chantier"
 					placeholder="Sélectionnez une option"
 					on:input={handleSelect}
 					required
@@ -371,7 +366,6 @@
 					rows="4"
 					placeholder="Message..."
 					name="message"
-					value="Bonjour, je vous contacte car j'ai un problème sur un chantier"
 					required
 					class="block w-full px-4 mb-4 leading-tight text-gray-700 border rounded bg-gray-50 dark:placeholder-gray-400 py-7 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-700"
 				/>
