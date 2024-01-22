@@ -19,10 +19,6 @@
 	import type { Image } from '$lib/types/Image';
 	import Section from '$lib/components/standalone/Section.svelte';
 	import type { Category, ListItem } from '$lib/types/ListItem';
-	import PrestationsBloc from '$lib/components/sections/PrestationsBloc.svelte';
-	import SpaceInvader from '$lib/components/sections/SpaceInvader.svelte';
-
-	const currentYear = new Date().getFullYear();
 
 	const imagesForBlocImagesTextList: [Image, Image, Image, Image] = [
 		{
@@ -214,8 +210,6 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 	/>
 </svelte:head>
 
-<!-- <VideoSection /> -->
-
 <section class="pt-40 pb-40">
 	<SectionTextDescList
 		subTitle="QUI SOMMES NOUS"
@@ -226,8 +220,6 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 		btnLink="/prestations/expertises/avec-rapport"
 	/>
 </section>
-
-<!-- <SpaceInvader /> -->
 
 <section class="pb-40">
 	<BlocImagesTextList
@@ -241,10 +233,6 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 <section class="pb-40">
 	<BlocPhoto />
 </section>
-
-<!-- <section class="pb-40">
-	<PrestationsBloc />
-</section> -->
 
 <section class="pb-40">
 	<GridListItems

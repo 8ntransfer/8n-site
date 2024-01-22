@@ -3,9 +3,9 @@
 </h1>
 
 <p class="leading-loose text-gray-500 dark:text-gray-300">
-	Avant de vous engager dans l'achat ou la vente d'un bien immobilier, notre expert réalise un avis
-	détaillé, vous fournissant une vision claire des éléments visibles pour vous rassurer ou rassurer
-	le futur aquéreur de votre bien immobilier.
+	Avant de vous engager dans l'achat ou la vente d'un bien immobilier, nous effectuons une expertise
+	structurelle et pathologique de votre bien pour vous en fournir une image claire et détaillée.
+	Cette démarche s'avère souvent déterminante dans la prise de décision finale.
 </p>
 <span
 	class="inline-flex justify-between items-center py-1 px-2 text-sm mt-2 mb-8 text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
@@ -40,9 +40,9 @@
 			se concentre sur l'état du bien, sans rechercher ni déterminer de responsabilités.
 		</li>
 		<li>
-			<span class="font-bold text-gray-900">Compte Rendu de Mission :</span> En fonction de la mission
-			choisie, vous aurez un avis oral, une note expertale ou un rapport d'expertise avec reportage photos
-			et description des désordres identifiés.
+			<span class="font-bold text-gray-900">Rapport d'expertise :</span> En fonction de la mission choisie,
+			vous aurez un avis oral, un rapport d'expertise simplifié sous forme de note expertale, ou un rapport
+			d'expertise avec reportage photos et description des désordres identifiés.
 		</li>
 	</ul>
 

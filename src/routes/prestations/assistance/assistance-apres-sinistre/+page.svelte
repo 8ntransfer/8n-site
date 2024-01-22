@@ -8,13 +8,7 @@
 	meilleure indemnisation possible au regard de votre contrat d'assurance MRH (Multi Risque
 	Habitation).
 </p>
-<!-- <span
-	class="inline-flex justify-between items-center py-1 px-2 text-sm mt-2 text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
->
-	<span class="text-sm font-medium"
-		>Rejetez la Proposition, Optez pour une Évaluation Expertise
-	</span>
-</span> -->
+
 <div class="w-full h-[1px] bg-gray-200" />
 
 <article class="mt-20">

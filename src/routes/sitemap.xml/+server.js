@@ -1,0 +1,74 @@
+export async function GET() {
+	return new Response(
+		`
+		<?xml version="1.0" encoding="UTF-8" ?>
+		<urlset
+			xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+			xmlns:xhtml="https://www.w3.org/1999/xhtml"
+			xmlns:mobile="https://www.google.com/schemas/sitemap-mobile/1.0"
+			xmlns:news="https://www.google.com/schemas/sitemap-news/0.9"
+			xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
+			xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
+		>
+            <url>
+                <loc>https://8nexpertise.com/</loc>
+                <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+                <changefreq>yearly</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url>
+                <loc>https://8nexpertise.com/contact</loc>
+                <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+                <changefreq>yearly</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url>
+                <loc>https://8nexpertise.com/prestations/expertises/avec-rapport</loc>
+                <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+                <changefreq>yearly</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url>
+                <loc>https://8nexpertise.com/prestations/expertises/oral</loc>
+                <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+                <changefreq>yearly</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url>
+                <loc>https://8nexpertise.com/prestations/expertises/note-expertale</loc>
+                <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+                <changefreq>yearly</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url>
+                <loc>https://8nexpertise.com/prestations/expertises/judiciaire</loc>
+                <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+                <changefreq>yearly</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url>
+                <loc>https://8nexpertise.com/prestations/assistance/assistance-apres-sinistre</loc>
+                <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+                <changefreq>yearly</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url>
+                <loc>https://8nexpertise.com/prestations/assistance/catastrophes-naturelles</loc>
+                <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+                <changefreq>yearly</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url>
+                <loc>https://8nexpertise.com/prestations/avis</loc>
+                <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+                <changefreq>yearly</changefreq>
+                <priority>0.8</priority>
+            </url>
+		</urlset>`.trim(),
+		{
+			headers: {
+				'Content-Type': 'application/xml'
+			}
+		}
+	);
+}

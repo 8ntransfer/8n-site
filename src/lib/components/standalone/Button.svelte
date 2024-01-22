@@ -10,7 +10,7 @@
 		ButtonCommonClass,
 		ButtonHoverClass
 	} from '$lib/types/Button';
-	import Loader from '$lib/svg/Loader.svelte';
+	import Loader from '../svg/Loader.svelte';
 
 	export let text = 'Explorez mes prestations';
 	export let color: ButtonColor = 'primary';

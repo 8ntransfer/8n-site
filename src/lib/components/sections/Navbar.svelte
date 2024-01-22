@@ -22,8 +22,6 @@
 	};
 
 	$: isOnTop = y < 100;
-	// is on header should be false when user has scroll 100vh
-	// and true when user has scroll 100vh + 1px
 	$: isOnHeader = browser && y < window.innerHeight / 2;
 </script>
 
@@ -40,11 +38,6 @@
 			backgoundColor={isMenuOpen ? '#1D4ED8' : '#6B728033'}
 			logoColor="#fff"
 		/>
-		<!-- {#if isMenuOpen}
-			<img src="/images/logo-blue.svg" alt="" class="h-8" />
-		{:else}
-			<img src="/images/logo.svg" alt="" class="h-8" />
-		{/if} -->
 	</a>
 
 	<div class="absolute hidden md:block top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">

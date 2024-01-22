@@ -1,7 +1,5 @@
 <script>
-	import { text } from '@sveltejs/kit';
 	import Button from '../standalone/Button.svelte';
-	import Navbar from './Navbar.svelte';
 </script>
 
 <header class="relative h-[90vh]">

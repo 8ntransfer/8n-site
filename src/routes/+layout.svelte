@@ -4,7 +4,6 @@
 	import './styles.css';
 	import Navbar from '$lib/components/sections/Navbar.svelte';
 
-	// get current url path
 	import { page } from '$app/stores';
 	import { SvelteToast } from '@zerodevx/svelte-toast';
 </script>
