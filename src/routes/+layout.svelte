@@ -3,6 +3,10 @@
 	import '../app.postcss';
 	import './styles.css';
 	import Navbar from '$lib/components/sections/Navbar.svelte';
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+
+	inject({ mode: dev ? 'development' : 'production' });
 
 	import { page } from '$app/stores';
 	import { SvelteToast } from '@zerodevx/svelte-toast';
