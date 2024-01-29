@@ -1,6 +1,6 @@
 <h1 class="mb-4 text-3xl font-bold lg:text-4xl font-heading dark:text-white">
-	<span class="text-blue-600">Mission d'Expertise avec Note Expertale</span> Une Analyse Fine pour des
-	Solutions Précises
+	<span class="text-blue-600">Mission d'Expertise sans recherche de responsabilité</span> Une Analyse
+	Fine pour des Solutions Précises
 </h1>
 <p class="mb-8 leading-loose text-gray-500 dark:text-gray-300">
 	À la Recherche de Solutions, Guidés par l'Expertise
@@ -10,9 +10,8 @@
 <article class="mt-20">
 	<h3>Un Diagnostic Approfondi</h3>
 	<p>
-		La mission d'expertise avec Note Expertale s'adresse à ceux qui cherchent une analyse pointue
-		sans compromettre l'efficacité. Notre approche systématique assure une compréhension détaillée
-		des problèmes immobiliers.
+		La mission d'expertise sans recherche de responsabilité concerne des désordres où il n'est plus
+		utile de rechercher des responsabilités et où seule l'analyse technique est nécessaire.
 	</p>
 	<h4>Étape 1 : Identification du Désordre</h4>
 	<p>
@@ -30,13 +29,13 @@
 		Nous préconisons des solutions de réparation si elles sont possibles. Si des investigations
 		complémentaires sont nécessaires, nous vous guidons pour les mener à bien.
 	</p>
-	<h3>La Note Expertale : Un Compte Rendu Concis et Précis</h3>
-	<h4>Rédaction et Remise du Compte Rendu</h4>
+	<h3>Un rapport d'expertise Concis et Précis</h3>
+	<h4>Rédaction et Remise du rapport technique</h4>
 	<p>
-		La mission se conclut par la rédaction d'un compte rendu détaillé sous forme de Note Expertale.
-		Cette note, bien que concise, reprend les points essentiels de l'analyse.
+		La mission se conclut par la rédaction d'un rapport technique détaillé qui reprend l'ensemble
+		des inverstigations, analyses et préconisations.
 	</p>
-	<h4>Contenu de la Note Expertale</h4>
+	<h4>Contenu du rapport</h4>
 	<ul>
 		<li>
 			<span class="font-semibold text-gray-900">Identification du Désordre :</span> Une description claire
@@ -54,13 +53,11 @@
 
 	<h4>Une Démarche Efficace et Ciblée</h4>
 	<p>
-		La mission d'expertise avec Note Expertale offre une démarche efficace, ciblée sur l'essentiel.
-		Tout en assurant une expertise de qualité, elle est plus succincte que la mission complète,
-		répondant ainsi aux besoins de ceux qui recherchent une analyse précise sans le surplus
-		d'informations.
+		La mission d'expertise sans recherche de responsabilité est une démarche efficace et adaptée à
+		un besoin d'expertise purement technique.
 	</p>
 
-	<h4>Pourquoi Choisir la Mission d'Expertise avec Note Expertale?</h4>
+	<h4>Pourquoi Choisir la Mission d'Expertise sans recherche de responsabilité?</h4>
 	<ul>
 		<li>
 			<span class="font-semibold text-gray-900">Efficacité :</span> Une démarche rapide et précise.
@@ -70,15 +67,10 @@
 			conservant la qualité de l'expertise.
 		</li>
 		<li>
-			<span class="font-semibold text-gray-900">Orientation Précise :</span> Idéale pour ceux qui recherchent
-			des réponses concises et des recommandations claires.
+			<span class="font-semibold text-gray-900">Orientation Précise :</span> Idéale pour une analyse
+			purement technique.
 		</li>
 	</ul>
-	<p>
-		Optez pour la mission d'expertise avec Note Expertale pour une démarche experte et des solutions
-		précises. Notre équipe d'experts est prête à vous guider vers la résolution de vos problèmes
-		immobiliers.
-	</p>
 </article>
 
 <style lang="postcss">

@@ -47,7 +47,7 @@
 		{
 			id: 1,
 			title: 'Expertise malfaçon, désordre, litige...',
-			href: '/prestations/expertises/avec-rapport',
+			href: '/prestations/expertises/avec-recherche-de-responsabilite',
 			text: "L'équipe propose des prestations en tous genres"
 		},
 		{
@@ -68,8 +68,8 @@
 		{
 			id: 1,
 			parent: 1,
-			title: "Mission d'expertise avec rapport",
-			href: '/prestations/expertises/avec-rapport',
+			title: "Mission d'expertise avec recherche de responsabilité",
+			href: '/prestations/expertises/avec-recherche-de-responsabilite',
 			text: "Une fois sa mission clairement établie,votre expert va mener pour vous une mission d'expertise et identifier le désordre ou problème, sa nature et sa cause."
 		},
 		{
@@ -82,9 +82,9 @@
 		{
 			id: 3,
 			parent: 1,
-			title: 'Expertise avec Note Expertale',
-			href: '/prestations/expertises/note-expertale',
-			text: 'Avis oral  + note expertale de compte rendue de la mission sans reportage photo ni  documentation réglementaire.'
+			title: 'Expertise sans recherche de responsabilité',
+			href: '/prestations/expertises/sans-recherche-de-responsabilite',
+			text: 'Avis oral  + rapport technique de la mission.'
 		},
 		{
 			id: 4,
@@ -105,7 +105,7 @@
 			parent: 1,
 			title: 'Judiciaire',
 			href: '/prestations/expertises/judiciaire',
-			text: "Réunion d'expertise Judiciaire"
+			text: "Réunion d'expertise Judiciaire."
 		},
 		{
 			id: 7,

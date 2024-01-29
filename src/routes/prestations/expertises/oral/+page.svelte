@@ -6,11 +6,11 @@
 <div class="w-full h-[1px] bg-gray-200" />
 
 <article class="mt-20">
-	<h3>Un Avis Oral Expert</h3>
+	<h3>Un Avis à dire d'expert</h3>
 	<p>
 		La mission d'expertise avec Avis Oral répond à un besoin de conseil et d'information. Face à un
-		ou plusieurs désordre(s) définis dans la lettre de mission, notre expert se déplace sur les
-		lieux pour vous fournir un avis technique oral.
+		désordre et défini dans la lettre de mission, notre expert se déplace sur les lieux pour vous
+		fournir un avis technique oral.
 	</p>
 
 	<h4>Étape 1 : Identification du Désordre</h4>
@@ -33,11 +33,10 @@
 	</p>
 
 	<h3>Une Approche Pragmatique</h3>
-	<h4>Pas de Rapport d'Expertise ni de Note Expertale</h4>
+	<h4>Pas de Rapport d'Expertise</h4>
 	<p>
-		La mission d'expertise avec Avis Oral se distingue par sa pragmatique. Elle ne comprend ni
-		rapport d'expertise ni note expertale, permettant ainsi de répondre rapidement à vos
-		préoccupations.
+		La mission d'expertise avec Avis Oral se distingue par sa pragmatique, à simple dire d'expert et
+		sans rapport, elle sert à affirmer ou infirmer la réalité d'un désordre.
 	</p>
 
 	<h4>Pourquoi Choisir la Mission avec Avis Oral?</h4>

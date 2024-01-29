@@ -28,15 +28,15 @@
 							Nos missions
 						</p>
 						<p class="mt-6 text-lg leading-8 text-gray-600">
-							Découvrez nos domaines d'expertise. Nous proposons des missions variées telles que
-							l'avis oral, la note expertale ou le rapport d'expertise amiable, juridiquement
-							opposable pour s'adapter à vos besoins et défendre au mieux vos intérêts.
+							Découvrez nos domaines d'expertise. Nous proposons des missions variées de l'avis oral
+							au rapport d'expertise amiable, juridiquement opposable pour s'adapter à vos besoins
+							et défendre au mieux vos intérêts.
 						</p>
 					</div>
 
 					<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
 						<a
-							href="/prestations/expertises/avec-rapport"
+							href="/prestations/expertises/avec-recherche-de-responsabilite"
 							class={twMerge(
 								'relative block ',
 								`transition-all duration-300  translate-x-[-2%] opacity-0`,
@@ -82,7 +82,7 @@
 						>
 							<div class="pl-6 p-4 rounded-lg cursor-pointer hover:bg-gray-100">
 								<dt class="inline font-semibold text-gray-900 relative">
-									Avis avant achat ou vente d'un bien immobilier
+									<strong>Avis avant achat</strong> ou vente d'un bien immobilier
 								</dt>
 								<dd class="inline">
 									Avis sur un désordre identifié • Audit général des parties visibles de l'enveloppe

@@ -31,7 +31,7 @@
 						</li>
 						<li class="mb-4 transition-colors duration-200">
 							<a
-								href="/prestations/expertises/avec-rapport"
+								href="/prestations/expertises/avec-recherche-de-responsabilite"
 								class="py-2 px-4 rounded-md hover:bg-gray-200"
 							>
 								Prestations
@@ -52,7 +52,7 @@
 						target="_blank"
 						class="block py-2 px-4 rounded-md hover:bg-gray-200"
 					>
-						SASU 8N Expertise Bâtiment <br />Burotel Espace Entreprise <br />6 rue Maurice Hurel
+						8N Expertise Bâtiment<br />6 rue Maurice Hurel
 						<br />31500 Toulouse
 					</a>
 				</div>

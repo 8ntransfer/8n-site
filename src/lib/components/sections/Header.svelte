@@ -58,7 +58,7 @@
 					text="Nos prestations"
 					btnSize="medium"
 					color="white"
-					to="/prestations/expertises/avec-rapport"
+					to="/prestations/expertises/avec-recherche-de-responsabilite"
 					class="ml-2"
 				/>
 			</div>

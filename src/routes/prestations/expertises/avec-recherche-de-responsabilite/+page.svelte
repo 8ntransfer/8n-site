@@ -1,6 +1,6 @@
 <h1 class="mb-4 text-3xl font-bold lg:text-4xl font-heading dark:text-white">
-	<span class="text-blue-600">Mission d'expertise avec rapport</span> La procédure incontournable en
-	cas de litige
+	<span class="text-blue-600">Mission d'expertise avec recherche de responsabilité</span> La procédure
+	incontournable en cas de litige
 </h1>
 <p class="mb-8 leading-loose text-gray-500 dark:text-gray-300">
 	Il s’agit d'une mission dont l'issue est la remise d'un rapport d'expertise. Ce document est
@@ -10,7 +10,7 @@
 <div class="w-full h-[1px] bg-gray-200" />
 
 <article class="mt-20">
-	<h3>Pourquoi Choisir une Mission d'expertise avec rapport?</h3>
+	<h3>Pourquoi Choisir une Mission d'expertise avec recherche de responsabilité?</h3>
 	<h4>Identification Précise des Problèmes</h4>
 	<ul>
 		<li>Vous avez une fissure sur votre façade&nbsp;?</li>
@@ -27,9 +27,9 @@
 	<p>Votre expert édite des préconisations claires pour remédier aux désordres identifiés.</p>
 	<h4>Responsabilités Clarifiées</h4>
 	<p>
-		Si nécessaire, nous déterminons les responsabilités, que ce soit d'ordre contractuel,
-		quasi-délictuel, ou décennal. Nous œuvrons pour la prise en charge de la réparation du dommage
-		par les parties impliquées.
+		Nous déterminons ensuite les responsabilités, que ce soit d'ordre contractuel, quasi-délictuel,
+		ou décennal. Nous œuvrons pour la prise en charge de la réparation du dommage par les parties
+		impliquées.
 	</p>
 	<h3>Procédure d'Expertise Amiable Contradictoire</h3>
 	<h4>Réunions d'Expertises</h4>
@@ -40,19 +40,25 @@
 	</p>
 	<h4>Suivi Intégral</h4>
 	<p>
-		Nous suivons votre dossier de près, garantissant une prise en charge totale jusqu'à
-		l'indemnisation complète ou l'ouverture des travaux de remise en état.
+		Nous suivons votre dossier jusqu'à l'indemnisation complète ou l'ouverture des travaux de remise
+		en état.
 	</p>
 	<h3>Rapport d'Expertise Détaillé</h3>
 	<p>
 		Document technique détaillé et rédigé avec soin, notre rapport d'expertise amiable
-		contradictoire comprend :
+		contradictoire comprend (liste non exhaustive) :
 	</p>
 	<ul>
 		<li>Reportage photos</li>
 		<li>Textes réglementaires de références</li>
 		<li>Compte rendu de réunion d'expertise amiable contradictoire</li>
-		<li>Conclusion détaillée de la mission</li>
+		<li>Identification du désordre</li>
+		<li>Détermination des causes possibles à partir des elements visibles</li>
+		<li>
+			Préconisations si possible des solutions pour réparer le désordre ou préconisations des
+			investigations complémentaires pour rechercher la cause
+		</li>
+		<li>Détermination des responsabilités</li>
 	</ul>
 
 	<h3>Un Document Irréfutable</h3>
@@ -60,11 +66,6 @@
 		Le rapport d'expertise amiable contradictoire constitue une base solide. Il peut être utilisé
 		pour étayer d'éventuelles poursuites judiciaires en cas d'échec de la procédure amiable, une
 		étape obligatoire avant toute phase judiciaire.
-	</p>
-	<br />
-	<p>
-		Choisissez la Mission d'expertise avec rapport quand cela s'avère nécéssaire. Notre expert est
-		là pour vous guider à chaque étape, assurant une résolution efficace de votre litige.
 	</p>
 </article>
 

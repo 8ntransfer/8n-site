@@ -23,7 +23,7 @@ export async function GET() {
                 <priority>1.0</priority>
             </url>
             <url>
-                <loc>https://8nexpertise.com/prestations/expertises/avec-rapport</loc>
+                <loc>https://8nexpertise.com/prestations/expertises/avec-recherche-de-responsabilite</loc>
                 <lastmod>2021-10-06T00:00:00+00:00</lastmod>
                 <changefreq>yearly</changefreq>
                 <priority>0.8</priority>
@@ -35,7 +35,7 @@ export async function GET() {
                 <priority>0.8</priority>
             </url>
             <url>
-                <loc>https://8nexpertise.com/prestations/expertises/note-expertale</loc>
+                <loc>https://8nexpertise.com/prestations/expertises/sans-recherche-de-responsabilite</loc>
                 <lastmod>2021-10-06T00:00:00+00:00</lastmod>
                 <changefreq>yearly</changefreq>
                 <priority>0.8</priority>

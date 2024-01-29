@@ -217,7 +217,7 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 		listItems={aboutUsItems}
 		bodyText={aboutUsDescription}
 		btnText="En savoir plus"
-		btnLink="/prestations/expertises/avec-rapport"
+		btnLink="/prestations/expertises/avec-recherche-de-responsabilite"
 	/>
 </section>
 

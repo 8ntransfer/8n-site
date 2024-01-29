@@ -4,3 +4,7 @@
 	--toastContainerBottom: 4rem;
 	--toastContainerLeft: auto;
 }
+
+strong {
+	font-weight: 600;
+}

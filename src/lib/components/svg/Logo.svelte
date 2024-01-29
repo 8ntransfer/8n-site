@@ -1,6 +1,7 @@
 <script lang="ts">
 	export let backgoundColor = 'black';
 	export let logoColor = 'white';
+	export let withBg = true;
 	let clazz = '';
 	export { clazz as class };
 </script>
@@ -14,7 +15,9 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<g id="logo">
-		<path id="background" d="M60 0H0V60H60V0Z" fill={backgoundColor} />
+		{#if withBg}
+			<path id="background" d="M60 0H0V60H60V0Z" fill={backgoundColor} />
+		{/if}
 		<g id="icon">
 			<path
 				id="n"

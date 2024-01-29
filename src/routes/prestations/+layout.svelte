@@ -18,16 +18,16 @@
 			title: 'Expertise malfaçon, désordre, litige...',
 			links: [
 				{
-					title: "Mission d'expertise avec rapport",
-					href: '/prestations/expertises/avec-rapport'
+					title: "Mission d'expertise avec recherche de responsabilité",
+					href: '/prestations/expertises/avec-recherche-de-responsabilite'
 				},
 				{
 					title: 'Expertise avec Avis Oral',
 					href: '/prestations/expertises/oral'
 				},
 				{
-					title: 'Expertise avec Note Expertale',
-					href: '/prestations/expertises/note-expertale'
+					title: 'Expertise sans recherche de responsabilité',
+					href: '/prestations/expertises/sans-recherche-de-responsabilite'
 				},
 				{
 					title: 'Judiciaire',
