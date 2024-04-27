@@ -121,82 +121,82 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 	const listOnIntervientSur: ListItem[] = [
 		{
 			category: 1,
-			title: '<h2>Malfaçons</h2>',
+			title: 'Malfaçons',
 			description: 'Identification et expertise des défauts de réalisation.'
 		},
 		{
 			category: 1,
-			title: '<h2>Fissures</h2>',
+			title: 'Fissures',
 			description: "Analyse des fissures présentes sur les façades ou structures d'un bâtiment."
 		},
 		{
 			category: 1,
-			title: '<h2>Humidité</h2>',
+			title: 'Humidité',
 			description:
 				"Expertise des problèmes d'humidité pouvant affecter la structure d'un bien immobilier."
 		},
 		{
 			category: 1,
-			title: '<h2>Infiltrations</h2>',
+			title: 'Infiltrations',
 			description:
 				"Expertise des infiltrations d'eau qui peuvent compromettre l'intégrité d'un bâtiment."
 		},
 		{
 			category: 1,
-			title: '<h2>Thermique</h2>',
+			title: 'Thermique',
 			description: "Analyse des problèmes liés à l'isolation thermique d'un bien immobilier."
 		},
 		{
 			category: 2,
-			title: '<h2>Audit technique avant Achat/Vente</h2>',
+			title: 'Audit technique avant Achat/Vente',
 			description:
 				"Évaluation technique d'un bien immobilier avant sa mise en vente ou son acquisition."
 		},
 		{
 			category: 3,
-			title: '<h2>Expert d’assuré</h2>',
+			title: 'Expert d’assuré',
 			description:
 				"Intervention après un sinistre pour évaluer les dommages et défendre les droits de l'assuré."
 		},
 		{
 			category: 3,
-			title: '<h2>CAT NAT</h2>',
+			title: 'CAT NAT',
 			description:
 				"Expertise suite à un sinistre lié à une catastrophe naturelle, sècheresse ou inondation et défense des droits de l'assuré."
 		},
 		{
 			category: 3,
-			title: '<h2>ambriolage</h2>',
+			title: 'Cambriolage',
 			description:
 				"Évaluation des dommages causés lors d'un cambriolage avec assistance pour les démarches d'assurance."
 		},
 		{
 			category: 3,
-			title: '<h2>Incendie, inondation, tempête...</h2>',
+			title: 'Incendie, inondation, tempête...',
 			description:
 				"Intervention après un incendie, une inondation, ou une tempête pour évaluer les dommages et défendre les droits de l'assuré."
 		},
 		{
 			category: 4,
-			title: '<h2>Assistance à réception de travaux (CMI-VEFA)</h2>',
+			title: 'Assistance à réception de travaux (CMI-VEFA)',
 			description:
 				"Soutien technique lors de la réception des travaux dans le cadre d'un Contrat de Construction de Maison Individuelle ou d'une Vente en l'État Futur d'Achèvement."
 		},
 		{
 			category: 5,
-			title: '<h2>Assistance à expertise judiciaire</h2>',
+			title: 'Assistance à expertise judiciaire',
 			description:
 				'Accompagnement technique lors de procédures judiciaires nécessitant une expertise dans le domaine du bâtiment.'
 		},
 		{
 			category: 5,
-			title: '<h2>Trouble anormal du voisinage</h2>',
+			title: 'Trouble anormal du voisinage',
 			description:
 				'Intervention en cas de problèmes de voisinage impactant la qualité de vie, avec expertise technique.'
 		},
 		{
 			category: 5,
-			title: '<h2>Vices cachés</h2>',
+			title: 'Vices cachés',
 			description:
 				"Réalisation d'une expertise à la preuve du vice caché et mise à la cause du vendeur."
 		}
@@ -238,8 +238,9 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 		title="Nous intervenons sur..."
 		subTitle="Expertise"
 		categories={categoriesOnIntervientSur}
-		listItems={listOnIntervientSur}
-	/>
+		listItems={listOnIntervientSur.map(item => (
+            <h2>{item.title}</h2>
+        ))}	/>
 </section>
 
 <section class="pb-40">
