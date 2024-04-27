@@ -235,7 +235,7 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 
 <section className="pb-40">
     <GridListItems
-        title="Nous intervenons sur..."
+        title={<h2>Nous intervenons sur...</h2>}
         subTitle="Expertise"
         categories={categoriesOnIntervientSur}
         listItems={listOnIntervientSur.map(item => (
@@ -243,6 +243,7 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
         ))}
     />
 </section>
+
 
 
 <section class="pb-40">
