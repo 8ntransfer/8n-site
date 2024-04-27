@@ -233,15 +233,17 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 	<BlocPhoto />
 </section>
 
-<section class="pb-40">
-	<GridListItems
-		title="Nous intervenons sur..."
-		subTitle="Expertise"
-		categories={categoriesOnIntervientSur}
-		listItems={listOnIntervientSur.map(item => (
-            <h2>{item.title}</h2>
-        ))}	/>
+<section className="pb-40">
+    <GridListItems
+        title="Nous intervenons sur..."
+        subTitle="Expertise"
+        categories={categoriesOnIntervientSur}
+        listItems={listOnIntervientSur.map(item => (
+            <div className="text-xl" dangerouslySetInnerHTML={{ __html: `<h2>${item.title}</h2>` }} />
+        ))}
+    />
 </section>
+
 
 <section class="pb-40">
 	<ContactSection /> 
