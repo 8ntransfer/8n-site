@@ -244,7 +244,7 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 </section>
 
 <section class="pb-40">
-	<ContactSection />
+	<ContactSection /> 
 </section>
 
 <Section class="sm:p-10">
