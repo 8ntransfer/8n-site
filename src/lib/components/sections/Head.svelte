@@ -15,7 +15,7 @@
 
 <meta
 	name="description"
-	content="expertise bâtiment - Solutions complètes pour vos problèmes de construction."
+	content="Expertise bâtiment - Solutions complètes pour vos problèmes de construction."
 />
 <meta
 	name="keywords"

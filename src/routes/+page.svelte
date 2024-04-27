@@ -206,7 +206,6 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 <svelte:head>
 	<Head
 		title="8N - expertise bâtiment"
-		description="Solutions complètes pour vos problèmes de construction."
 	/>
 </svelte:head>
 

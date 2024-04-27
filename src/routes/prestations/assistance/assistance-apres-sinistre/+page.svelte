@@ -1,7 +1,7 @@
 <h1 class="mb-4 text-3xl font-bold lg:text-4xl font-heading dark:text-white">
-	<span class="text-blue-600">Mission d'assistance après sinistre</span> Votre
-	<strong>expert d'assuré</strong> vous accompagne pour une meilleure indemnisation
-</h1>
+	<span class="text-blue-600">Mission d'assistance après sinistre</span></h1> <h2>Votre
+	<strong>expert d'assuré</strong> vous accompagne pour une meilleure indemnisation</h2>
+
 <p class="leading-loose text-gray-500 dark:text-gray-300 mb-8">
 	Vous venez de vivre un gros sinistre sur votre habitation et vous n’êtes pas satisfait de
 	l'indemnisation proposé par votre assureur&nbsp;? Notre mission est de vous faire obtenir la

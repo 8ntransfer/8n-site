@@ -1,7 +1,7 @@
 <h1 class="mb-4 text-3xl font-bold lg:text-4xl font-heading dark:text-white">
-	<span class="text-blue-600">Mission d'Expertise en cas de Catastrophe Naturelle</span> Rétablissez
+	<span class="text-blue-600">Mission d'Expertise en cas de Catastrophe Naturelle</span></h1><h2>Rétablissez
 	l'Équilibre de Votre Habitat
-</h1>
+</h2>
 
 <p class="leading-loose text-gray-500 dark:text-gray-300 mb-8">
 	Votre maison présente des fissures suite à une période de sécheresse, ou vous avez subi de graves

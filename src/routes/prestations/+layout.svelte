@@ -67,7 +67,6 @@
 <svelte:head>
 	<Head
 		title="8N - Prestations"
-		description="Solutions complètes pour vos problèmes de construction."
 	/>
 </svelte:head>
 

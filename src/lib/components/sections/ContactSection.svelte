@@ -121,9 +121,9 @@
 				<div class="relative flex flex-col items-center">
 					<h2 class="text-base font-semibold tracking-wide text-blue-600 uppercase">Contact</h2>
 
-					<h1 class="text-5xl font-bold dark:text-white">
+					<h2 class="text-5xl font-bold dark:text-white">
 						Demande <span class="text-blue-500"> d'expertise </span>
-					</h1>
+					</h2>
 				</div>
 			</div>
 		</div>

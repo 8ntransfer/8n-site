@@ -1,6 +1,6 @@
 <h1 class="mb-4 text-3xl font-bold lg:text-4xl font-heading dark:text-white">
-	<span class="text-blue-600">Avis Avant Achat/Vente </span> Éclairez Votre Décision en Toute Objectivité
-</h1>
+	<span class="text-blue-600">Avis Avant Achat/Vente </span></h1><h2> Éclairez Votre Décision en Toute Objectivité
+</h2>
 
 <p class="leading-loose text-gray-500 dark:text-gray-300">
 	Avant de vous engager dans l'achat ou la vente d'un bien immobilier, nous effectuons une expertise
