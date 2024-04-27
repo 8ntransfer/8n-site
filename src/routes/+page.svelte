@@ -205,7 +205,7 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 
 <svelte:head>
 	<Head
-		title="8nexpertise - expertise bâtiment"
+		title="8N - expertise bâtiment"
 	/>
 </svelte:head>
 
@@ -233,21 +233,17 @@ L'expertise est un outil essentiel pour éclairer les décisions dans des situat
 	<BlocPhoto />
 </section>
 
-<section className="pb-40">
-    <GridListItems
-        title={<h2>Nous intervenons sur...</h2>}
-        subTitle="Expertise"
-        categories={categoriesOnIntervientSur}
-        listItems={listOnIntervientSur.map(item => (
-            <div className="text-xl" dangerouslySetInnerHTML={{ __html: `<h2>${item.title}</h2>` }} />
-        ))}
-    />
+<section class="pb-40">
+	<GridListItems
+		title="Nous intervenons sur..."
+		subTitle="Expertise"
+		categories={categoriesOnIntervientSur}
+		listItems={listOnIntervientSur}
+	/>
 </section>
 
-
-
 <section class="pb-40">
-	<ContactSection /> 
+	<ContactSection />
 </section>
 
 <Section class="sm:p-10">
