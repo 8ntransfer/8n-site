@@ -52,7 +52,7 @@
 						target="_blank"
 						class="block py-2 px-4 rounded-md hover:bg-gray-200"
 					>
-						8N Expertise Bâtiment<br />6 rue Maurice Hurel
+						<strong>8N Expertise Bâtiment</strong><br />6 rue Maurice Hurel
 						<br />31500 Toulouse
 					</a>
 				</div>

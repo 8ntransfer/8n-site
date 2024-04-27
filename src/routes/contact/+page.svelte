@@ -6,7 +6,7 @@
 
 <svelte:head>
 	<Head
-		title="8N - Contact"
+		title="8NExpertise - Contact"
 	/>
 </svelte:head>
 

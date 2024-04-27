@@ -160,7 +160,7 @@
 						Adresse
 					</h2>
 					<span class="text-base font-medium text-gray-500 md:text-lg dark:text-gray-400"
-						>8N Expertise Bâtiment <br />6 rue Maurice Hurel
+						><strong>8NExpertise</strong> Bâtiment <br />6 rue Maurice Hurel
 						<br />31500 Toulouse
 					</span>
 				</a>

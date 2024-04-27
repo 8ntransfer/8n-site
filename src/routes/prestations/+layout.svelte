@@ -66,7 +66,7 @@
 
 <svelte:head>
 	<Head
-		title="8N - Prestations"
+		title="8NExpertise - Prestations"
 	/>
 </svelte:head>
 

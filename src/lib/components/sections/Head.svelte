@@ -14,11 +14,11 @@
 
 <meta
 	name="description"
-	content="Expertise bâtiment - Solutions complètes pour vos problèmes de construction."
+	content="8nexpertise.com - Expertise bâtiment, solutions complètes pour vos problèmes de construction."
 />
 <meta
 	name="keywords"
-	content="expertise, bâtiment, construction, sinistre, assurance, conseil technique"
+	content="8nexpertise, expertise, bâtiment, construction, sinistre, assurance, conseil technique"
 />
 <meta name="author" content="Corentin Gobbo" />
 <meta name="robots" content="index, follow" />

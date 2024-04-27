@@ -23,7 +23,7 @@
 		>
 			<span class="block">“Besoin d'un expert pour suivre mon chantier&nbsp;?”</span>
 			<span class="block font-medium text-xl mt-2 text-blue-500"
-				>8N Expertise et bâtiment un expert indépendant à vos côtés
+				><strong>8N Expertise et bâtiment</strong> un expert indépendant à vos côtés
 			</span>
 		</h2>
 		<div class="flex-wrap items-center justify-center gap-8 text-center sm:flex">
