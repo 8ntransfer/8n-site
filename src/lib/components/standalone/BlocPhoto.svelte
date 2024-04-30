@@ -47,9 +47,9 @@
 							<div class="pl-6 p-4 rounded-lg cursor-pointer hover:bg-gray-100">
 								<dt class="inline font-semibold text-gray-900 relative">Expertise désordres –</dt>
 								<dd class="inline">
-									Malfaçon • garantie décennale • litiges chantier • défauts esthétiques • fissures
+									<h3>Malfaçon • garantie décennale • litiges chantier • défauts esthétiques • fissures
 									gros œuvres et second œuvre • humidité • infiltration • isolation thermique • vice
-									caché
+									caché</h3>
 								</dd>
 							</div>
 						</a>
@@ -64,10 +64,10 @@
 						>
 							<div class="pl-6 p-4 rounded-lg cursor-pointer hover:bg-gray-100">
 								<dt class="inline relative font-semibold text-gray-900">
-									Assistance règlement de sinistre et contre expertise d'assurance
+									<h3>Assistance règlement de sinistre et contre expertise d'assurance</h3>
 								</dt>
 								<dd class="inline">
-									Incendie, inondation , tempête • Catastrophe naturelle sécheresse ou inondation
+									<h3>Incendie, inondation , tempête • Catastrophe naturelle sécheresse ou inondation</h3>
 								</dd>
 							</div>
 						</a>
@@ -85,8 +85,8 @@
 									<strong>Avis avant achat</strong> ou vente d'un bien immobilier
 								</dt>
 								<dd class="inline">
-									Avis sur un désordre identifié • Audit général des parties visibles de l'enveloppe
-									extérieure et du second œuvre
+									<h3>Avis sur un désordre identifié • Audit général des parties visibles de l'enveloppe
+									extérieure et du second œuvre</h3>
 								</dd>
 							</div>
 						</a>
