@@ -37,11 +37,11 @@
 				</svg>
 			</a>
 
-			<h2
+			<h1
 				class="text-white self-center justify-self-center text-center text-4xl md:self-start md:text-left md:text-5xl lg:text-6xl font-extrabold tracking-tight titleHome"
 			>
 				Sinistre, litige, malfaçon, fissures... <br /> Vos intérêts, notre priorité.
-			</h2>
+			</h1>
 			<h2
 				class="mt-3 text-lg text-center self-center md:self-start md:text-left text-white sm:mt-5 sm:max-w-xl md:mt-5 md:text-xl lg:mx-0"
 			>
